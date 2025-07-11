@@ -6,14 +6,58 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Calendar, NotebookPen, Users, Clock, Star } from "lucide-react";
+import {
+  Calendar,
+  NotebookPen,
+  Users,
+  Clock,
+  BookOpen,
+  Star,
+} from "lucide-react";
+import Link from "next/link";
 
-import { Navbar } from "@/components/navbar";
-import { Footer } from "./footer";
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <Navbar />
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      {/* Header */}
+      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50 dark:bg-gray-900/80 dark:border-gray-800">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <BookOpen className="h-8 w-8 text-blue-600" />
+            <span className="text-2xl font-bold text-gray-900 dark:text-white">
+              StudyPlan
+            </span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link
+              href="#features"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors"
+            >
+              Features
+            </Link>
+            <Link
+              href="#about"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors"
+            >
+              About
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors"
+            >
+              Contact
+            </Link>
+          </nav>
+          <div className="flex items-center space-x-4">
+            <Button variant="ghost" className="hidden sm:inline-flex">
+              Sign In
+            </Button>
+            <Button className="bg-blue-600 hover:bg-blue-700">
+              Get Started
+            </Button>
+          </div>
+        </div>
+      </header>
 
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
@@ -21,14 +65,14 @@ export default function LandingPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <div className="inline-block rounded-full bg-blue-100 px-4 py-2 text-sm font-medium text-blue-800">
+                <div className="inline-block rounded-full bg-blue-100 dark:bg-blue-900/50 px-4 py-2 text-sm font-medium text-blue-800 dark:text-blue-200">
                   🎓 For Students, By Students
                 </div>
-                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                   Plan Your Perfect{" "}
                   <span className="text-blue-600">Semester</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                   Organize your classes, take notes, and stay on top of your
                   academic journey. The all-in-one platform designed to help
                   students succeed.
@@ -49,7 +93,7 @@ export default function LandingPage() {
                   Watch Demo
                 </Button>
               </div>
-              <div className="flex items-center space-x-8 text-sm text-gray-500">
+              <div className="flex items-center space-x-8 text-sm text-gray-500 dark:text-gray-400">
                 <div className="flex items-center space-x-2">
                   <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   <span>4.9/5 rating</span>
@@ -61,40 +105,46 @@ export default function LandingPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border">
-                <div className="space-y-6">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">
-                      Fall 2024 Schedule
-                    </h3>
-                    <div className="text-sm text-gray-500">15 credits</div>
+              <div className="relative z-10 bg-white rounded-2xl shadow-2xl p-8 border dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-semibold dark:text-white">
+                    Fall 2024 Schedule
+                  </h3>
+                  <div className="text-sm text-gray-500 dark:text-gray-400">
+                    15 credits
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3 p-3 bg-blue-50 rounded-lg">
-                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                      <div className="flex-1">
-                        <div className="font-medium">Computer Science 101</div>
-                        <div className="text-sm text-gray-500">
-                          MWF 9:00-10:00 AM
-                        </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-3 p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <div className="flex-1">
+                      <div className="font-medium dark:text-white">
+                        Computer Science 101
+                      </div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                        MWF 9:00-10:00 AM
                       </div>
                     </div>
-                    <div className="flex items-center space-x-3 p-3 bg-green-50 rounded-lg">
-                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                      <div className="flex-1">
-                        <div className="font-medium">Calculus II</div>
-                        <div className="text-sm text-gray-500">
-                          TTh 11:00-12:30 PM
-                        </div>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
+                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    <div className="flex-1">
+                      <div className="font-medium dark:text-white">
+                        Calculus II
+                      </div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                        TTh 11:00-12:30 PM
                       </div>
                     </div>
-                    <div className="flex items-center space-x-3 p-3 bg-purple-50 rounded-lg">
-                      <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                      <div className="flex-1">
-                        <div className="font-medium">English Literature</div>
-                        <div className="text-sm text-gray-500">
-                          MW 2:00-3:30 PM
-                        </div>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                    <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
+                    <div className="flex-1">
+                      <div className="font-medium dark:text-white">
+                        English Literature
+                      </div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                        MW 2:00-3:30 PM
                       </div>
                     </div>
                   </div>
@@ -107,13 +157,13 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-white">
+      <section id="features" className="py-20 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
               Everything You Need to Succeed
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               From planning your semester to taking comprehensive notes, we've
               got you covered.
             </p>
@@ -132,7 +182,7 @@ export default function LandingPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>• Visual class scheduler</li>
                   <li>• Conflict detection</li>
                   <li>• Credit hour tracking</li>
@@ -153,7 +203,7 @@ export default function LandingPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>• Rich text editor</li>
                   <li>• Class-specific notebooks</li>
                   <li>• Search functionality</li>
@@ -173,7 +223,7 @@ export default function LandingPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-gray-600">
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                   <li>• Assignment reminders</li>
                   <li>• Exam scheduling</li>
                   <li>• Study time blocks</li>
@@ -186,7 +236,7 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-700 dark:to-purple-700">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
             <h2 className="text-3xl lg:text-4xl font-bold text-white">
@@ -219,7 +269,85 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <Footer />
+      <footer className="bg-gray-900 text-white py-12 dark:bg-black">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <BookOpen className="h-6 w-6 text-blue-400" />
+                <span className="text-xl font-bold">StudyPlan</span>
+              </div>
+              <p className="text-gray-400">
+                Empowering students to achieve academic success through better
+                planning and organization.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Product</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Features
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Pricing
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Updates
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Support</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Help Center
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Community
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Blog
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-white transition-colors">
+                    Careers
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 StudyPlan. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
