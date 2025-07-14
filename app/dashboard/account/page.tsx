@@ -1,5 +1,6 @@
 "use client";
-import { CalendarView } from "@/components/calendar-view";
+
+import { AccountSettings } from "@/components/account-settings";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -10,16 +11,8 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { useEffect, useState } from "react";
-import { Lesson } from "webuntis";
-import {
-  CalendarEvent,
-  convertWebUntisLessons,
-  groupConsecutiveLessons,
-} from "@/lib/webuntis-utils";
-import Classes from "@/components/classes";
 
-export default function ClassesPage() {
+export default function AccountPage() {
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -33,7 +26,7 @@ export default function ClassesPage() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Calendar</BreadcrumbPage>
+                <BreadcrumbPage>Account Settings</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -41,7 +34,7 @@ export default function ClassesPage() {
       </header>
 
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-        <Classes />
+        <AccountSettings />
       </div>
     </>
   );

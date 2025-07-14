@@ -7,20 +7,10 @@ import { Badge } from "@/components/ui/badge";
 import { ChevronLeft, ChevronRight, Calendar, Grid3X3 } from "lucide-react";
 import { WeekView } from "@/components/week-view";
 import { MonthView } from "@/components/month-view";
-
-export interface ClassEvent {
-  id: number;
-  title: string;
-  startTime: string;
-  endTime: string;
-  location: string;
-  professor: string;
-  color: string;
-  type: "lecture" | "seminar" | "lab" | "exam";
-}
+import type { CalendarEvent } from "@/lib/webuntis-utils";
 
 interface CalendarViewProps {
-  classes: ClassEvent[];
+  classes: CalendarEvent[];
 }
 
 type ViewMode = "week" | "month";
@@ -71,6 +61,9 @@ export function CalendarView({ classes }: CalendarViewProps) {
       });
     }
   };
+
+  // Get unique activity types for legend
+  const activityTypes = Array.from(new Set(classes.map((c) => c.type)));
 
   return (
     <div className="space-y-4">
@@ -143,38 +136,34 @@ export function CalendarView({ classes }: CalendarViewProps) {
       {/* Legend */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-sm font-medium">Class Types</CardTitle>
+          <CardTitle className="text-sm font-medium">Activity Types</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="flex flex-wrap gap-2">
-            <Badge
-              variant="outline"
-              className="border-blue-500 text-blue-700 dark:text-blue-300"
-            >
-              <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-              Lecture
-            </Badge>
-            <Badge
-              variant="outline"
-              className="border-green-500 text-green-700 dark:text-green-300"
-            >
-              <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-              Seminar
-            </Badge>
-            <Badge
-              variant="outline"
-              className="border-purple-500 text-purple-700 dark:text-purple-300"
-            >
-              <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
-              Lab
-            </Badge>
-            <Badge
-              variant="outline"
-              className="border-amber-500 text-amber-700 dark:text-amber-300"
-            >
-              <div className="w-2 h-2 bg-amber-500 rounded-full mr-2"></div>
-              Exam
-            </Badge>
+            {activityTypes.map((type) => {
+              const colorMap = {
+                lecture: "border-blue-500 text-blue-700 dark:text-blue-300",
+                seminar: "border-green-500 text-green-700 dark:text-green-300",
+                lab: "border-purple-500 text-purple-700 dark:text-purple-300",
+                exam: "border-red-500 text-red-700 dark:text-red-300",
+              };
+
+              const bgColorMap = {
+                lecture: "bg-blue-500",
+                seminar: "bg-green-500",
+                lab: "bg-purple-500",
+                exam: "bg-red-500",
+              };
+
+              return (
+                <Badge key={type} variant="outline" className={colorMap[type]}>
+                  <div
+                    className={`w-2 h-2 ${bgColorMap[type]} rounded-full mr-2`}
+                  ></div>
+                  {type.charAt(0).toUpperCase() + type.slice(1)}
+                </Badge>
+              );
+            })}
           </div>
         </CardContent>
       </Card>

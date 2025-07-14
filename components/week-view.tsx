@@ -1,13 +1,13 @@
 "use client";
 
 import { useMemo } from "react";
-import type { ClassEvent } from "@/components/calendar-view";
 import { Card } from "@/components/ui/card";
-import { Clock, MapPin, User } from "lucide-react";
+import { Clock, MapPin, User, Users } from "lucide-react";
+import type { CalendarEvent } from "@/lib/webuntis-utils";
 
 interface WeekViewProps {
   currentDate: Date;
-  classes: ClassEvent[];
+  classes: CalendarEvent[];
 }
 
 const timeSlots = Array.from({ length: 14 }, (_, i) => {
@@ -47,7 +47,7 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
     });
   };
 
-  const getClassPosition = (classEvent: ClassEvent) => {
+  const getClassPosition = (classEvent: CalendarEvent) => {
     const startTime = new Date(classEvent.startTime);
     const endTime = new Date(classEvent.endTime);
     const startHour = startTime.getHours() + startTime.getMinutes() / 60;
@@ -171,10 +171,20 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
                         {classEvent.location}
                       </div>
                       {height > 80 && (
-                        <div className="flex items-center text-xs text-gray-600 dark:text-gray-400 truncate">
-                          <User className="h-3 w-3 mr-1" />
-                          {classEvent.professor}
-                        </div>
+                        <>
+                          <div className="flex items-center text-xs text-gray-600 dark:text-gray-400 truncate">
+                            <User className="h-3 w-3 mr-1" />
+                            {classEvent.professor}
+                          </div>
+                          {classEvent.classes.length > 0 && (
+                            <div className="flex items-center text-xs text-gray-600 dark:text-gray-400 truncate">
+                              <Users className="h-3 w-3 mr-1" />
+                              {classEvent.classes.slice(0, 2).join(", ")}
+                              {classEvent.classes.length > 2 &&
+                                ` +${classEvent.classes.length - 2}`}
+                            </div>
+                          )}
+                        </>
                       )}
                     </div>
                   </Card>

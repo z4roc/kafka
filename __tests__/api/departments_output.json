@@ -1,0 +1,42 @@
+[
+  {
+    "id": 10,
+    "name": "DTC",
+    "longName": "DTC"
+  },
+  {
+    "id": 1,
+    "name": "INF",
+    "longName": "Informatik"
+  },
+  {
+    "id": 4,
+    "name": "MAB",
+    "longName": "Maschinenbau"
+  },
+  {
+    "id": 9,
+    "name": "Orga",
+    "longName": "Organisation"
+  },
+  {
+    "id": 2,
+    "name": "TEX",
+    "longName": "TEX"
+  },
+  {
+    "id": 8,
+    "name": "TEX-Prüf",
+    "longName": "TEX-Prüf"
+  },
+  {
+    "id": 7,
+    "name": "Verwaltung",
+    "longName": "Verwaltung"
+  },
+  {
+    "id": 3,
+    "name": "WIW",
+    "longName": "WIW"
+  }
+]

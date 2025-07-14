@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yourical Enchanced, Jetzt Projekt "KAFKA"
 
-## Getting Started
+![]
 
-First, run the development server:
+Dieses Projekt soll ein Superset/Erweiterung des existierenden "yourical.de"-Projektes und wird mehr zu einer zentralen Platform fürs Studium
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Für Entwickler
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Projektstruktur
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`app` enthält die Seiten selber und arbeitet nach dem Next-JS app-router.
+`components` enthält alle React-Komponenten die benutzt werden.
+`data` nur zum testen, wird später replaced
+`hooks` React-Hooks um die UI up to date zu halten (aktuell nur Authentifizierung)
+`lib` Backend code oder andere Funktionen die keine Komponenten sind
+`locales` für später, die Übersetzungen
+`public` Dateien die einfach auf dem Server liegen (Bilder)
+`types` Typescript types
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Den Rest nicht anfassen wenn keine Ahnung, danke!
 
-## Learn More
+# Features
 
-To learn more about Next.js, take a look at the following resources:
+- Kalender individuell abhängig des eigenen Semesters planen und einsehen
+- Fächer verwalten, Notizen und Dateien speichern
+- Mit anderen Kalendern synchronisieren
+- (Maybe später mit anderen austauschen im gleichen Studiengang/Fach, z.B. Dateien)
+- Wenn möglich hook an ilias für Abgaben/Gewählte Fächer (ggf. mit IT klären, wenn nicht scrapen?)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# TODO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Webuntis API Calls generalisieren, Fächer mit Uhrzeiten speichern pro Fach (Mit Raum, Prof)
+- Auf Supabase umziehen
+- Notes Funktion
+- Notes Teilen Funktion
+- Kalender Ical live sync (alle 30-60min)
+- Als Ical File exportieren

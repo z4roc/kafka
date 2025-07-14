@@ -45,6 +45,14 @@ export class WebUntisAPI {
       console.error("Login failed:", error);
     }
   }
+
+  async logout() {
+    try {
+      await this.webuntis.logout();
+    } catch (error) {
+      console.error("Logout failed:", error);
+    }
+  }
   // aktuelles Semester
   async getCurrentSchoolYear() {
     const schoolYear = await this.webuntis.getCurrentSchoolyear(

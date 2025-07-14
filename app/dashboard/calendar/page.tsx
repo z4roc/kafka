@@ -1,5 +1,5 @@
 "use client";
-import { CalendarView, ClassEvent } from "@/components/calendar-view";
+import { CalendarView } from "@/components/calendar-view";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -10,76 +10,38 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { webuntisApi } from "@/lib/webuntis_api";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Lesson } from "webuntis";
+import {
+  CalendarEvent,
+  convertWebUntisLessons,
+  groupConsecutiveLessons,
+} from "@/lib/webuntis-utils";
 
-// Mock data - replace with actual WebUntis API data
-const mockClasses: ClassEvent[] = [
-  {
-    id: 1,
-    title: "Computer Science 101",
-    startTime: "2024-03-11T09:00:00",
-    endTime: "2024-03-11T10:30:00",
-    location: "Room 204",
-    professor: "Dr. Smith",
-    color: "#3b82f6", // blue
-    type: "lecture",
-  },
-  {
-    id: 2,
-    title: "Calculus II",
-    startTime: "2024-03-11T11:00:00",
-    endTime: "2024-03-11T12:30:00",
-    location: "Math Building 301",
-    professor: "Prof. Johnson",
-    color: "#10b981", // green
-    type: "lecture",
-  },
-  {
-    id: 3,
-    title: "English Literature",
-    startTime: "2024-03-11T14:00:00",
-    endTime: "2024-03-11T15:30:00",
-    location: "Liberal Arts 105",
-    professor: "Dr. Williams",
-    color: "#8b5cf6", // purple
-    type: "seminar",
-  },
-  {
-    id: 4,
-    title: "Computer Science 101",
-    startTime: "2024-03-13T09:00:00",
-    endTime: "2024-03-13T10:30:00",
-    location: "Room 204",
-    professor: "Dr. Smith",
-    color: "#3b82f6",
-    type: "lecture",
-  },
-  {
-    id: 5,
-    title: "Physics Lab",
-    startTime: "2024-03-12T13:00:00",
-    endTime: "2024-03-12T16:00:00",
-    location: "Physics Lab 2",
-    professor: "Dr. Brown",
-    color: "#f59e0b", // amber
-    type: "lab",
-  },
-  {
-    id: 6,
-    title: "Calculus II",
-    startTime: "2024-03-14T11:00:00",
-    endTime: "2024-03-14T12:30:00",
-    location: "Math Building 301",
-    professor: "Prof. Johnson",
-    color: "#10b981",
-    type: "lecture",
-  },
-];
+export default function CalendarPage() {
+  const [lessons, setLessons] = useState<CalendarEvent[] | null>([]);
+  useEffect(() => {
+    // Fetch classes from WebUntis API
+    fetch("/api/webuntis")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Fetched lessons:", data);
+        const events = convertWebUntisLessons(data);
 
-export default async function CalendarPage() {
-  const lessons = await webuntisApi.getTimetable();
-  console.log("Fetched lessons:", lessons);
+        // Group consecutive lessons of the same subject
+        const groupedEvents = groupConsecutiveLessons(events);
+        setLessons(groupedEvents);
+      })
+      .catch((error) => {
+        console.error("Error fetching lessons:", error);
+        // Fallback to mock data if API fails
+      });
+  }, []);
 
   return (
     <>
@@ -102,7 +64,7 @@ export default async function CalendarPage() {
       </header>
 
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-        <CalendarView classes={mockClasses} />
+        <CalendarView classes={lessons || []} />
       </div>
     </>
   );

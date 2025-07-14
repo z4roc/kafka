@@ -34,16 +34,9 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { logout } from "@/lib/auth"; // Adjust the import path as necessary
+import { useAuthStore } from "@/hooks/auth_hook";
 
 // Mock user data - replace with actual user data from Firebase
-const userData = {
-  name: "John Doe",
-  email: "john.doe@university.edu",
-  school: "University of California, Berkeley",
-  major: "Computer Science",
-  avatar: "/placeholder.svg?height=32&width=32",
-};
 
 const navigationItems = [
   {
@@ -70,11 +63,17 @@ const navigationItems = [
 
 export function DashboardSidebar() {
   const { theme, setTheme } = useTheme();
+  const { user, loading, logout } = useAuthStore();
 
   const onLogoutClick = async () => {
     await logout();
     window.location.href = "/"; // Redirect to home after logout
   };
+
+  if (!user || loading) {
+    return null; // Optionally, you can show a loading spinner or placeholder here
+  }
+
   return (
     <Sidebar variant="inset">
       <SidebarHeader>
@@ -88,11 +87,11 @@ export function DashboardSidebar() {
                 >
                   <Avatar className="h-8 w-8 rounded-lg">
                     <AvatarImage
-                      src={userData.avatar || "/placeholder.svg"}
-                      alt={userData.name}
+                      src={user.avatarUrl || "/placeholder.svg"}
+                      alt={user.displayName || "User Avatar"}
                     />
                     <AvatarFallback className="rounded-lg">
-                      {userData.name
+                      {(user!.displayName || "User Test")
                         .split(" ")
                         .map((n) => n[0])
                         .join("")}
@@ -100,9 +99,9 @@ export function DashboardSidebar() {
                   </Avatar>
                   <div className="grid flex-1 text-left text-sm leading-tight">
                     <span className="truncate font-semibold">
-                      {userData.name}
+                      {user!.displayName || "User Test"}
                     </span>
-                    <span className="truncate text-xs">{userData.email}</span>
+                    <span className="truncate text-xs">{user!.email}</span>
                   </div>
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
@@ -116,22 +115,23 @@ export function DashboardSidebar() {
                   <div className="flex items-center gap-2">
                     <Avatar className="h-8 w-8 rounded-lg">
                       <AvatarImage
-                        src={userData.avatar || "/placeholder.svg"}
-                        alt={userData.name}
+                        src={user.avatarUrl || "/placeholder.svg"}
+                        alt={user.displayName || "User Avatar"}
                       />
                       <AvatarFallback className="rounded-lg">
-                        {userData.name
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
+                        {user.displayName ||
+                          "User Test"
+                            .split(" ")
+                            .map((n) => n[0])
+                            .join("")}
                       </AvatarFallback>
                     </Avatar>
                     <div className="grid flex-1 text-left text-sm leading-tight">
                       <span className="truncate font-semibold">
-                        {userData.name}
+                        {user.displayName || "User Test"}
                       </span>
                       <span className="truncate text-xs">
-                        {userData.school}
+                        {user.schoolName || "Your School Name"}
                       </span>
                     </div>
                   </div>

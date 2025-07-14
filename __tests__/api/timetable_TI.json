@@ -1,0 +1,1275 @@
+[
+  {
+    "id": 542878,
+    "date": 20250710,
+    "startTime": 930,
+    "endTime": 1000,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 177,
+        "name": "RembDe",
+        "longname": "Rembold"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22205",
+    "lsnumber": 5700,
+    "sg": "36",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542881,
+    "date": 20250710,
+    "startTime": 1000,
+    "endTime": 1030,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 177,
+        "name": "RembDe",
+        "longname": "Rembold"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22205",
+    "lsnumber": 5700,
+    "sg": "36",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542884,
+    "date": 20250710,
+    "startTime": 1030,
+    "endTime": 1100,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 177,
+        "name": "RembDe",
+        "longname": "Rembold"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22205",
+    "lsnumber": 5700,
+    "sg": "36",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544680,
+    "date": 20250710,
+    "startTime": 930,
+    "endTime": 1000,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [
+      {
+        "id": 497,
+        "name": "MaliSi",
+        "longname": "Malik"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 101500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544683,
+    "date": 20250710,
+    "startTime": 1000,
+    "endTime": 1030,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [
+      {
+        "id": 497,
+        "name": "MaliSi",
+        "longname": "Malik"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 101500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544686,
+    "date": 20250710,
+    "startTime": 1030,
+    "endTime": 1100,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [
+      {
+        "id": 497,
+        "name": "MaliSi",
+        "longname": "Malik"
+      }
+    ],
+    "su": [
+      {
+        "id": 112,
+        "name": "BetSich",
+        "longname": "Betriebssicherheit"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 101500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542905,
+    "date": 20250717,
+    "startTime": 1130,
+    "endTime": 1200,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5261,
+        "name": "AD-5",
+        "longname": "AD-5"
+      },
+      {
+        "id": 5264,
+        "name": "AITS-5",
+        "longname": "AITS-5"
+      },
+      {
+        "id": 5267,
+        "name": "CPS-5",
+        "longname": "CPS-5"
+      },
+      {
+        "id": 5270,
+        "name": "ITM-5",
+        "longname": "ITM-5"
+      }
+    ],
+    "te": [
+      {
+        "id": 177,
+        "name": "RembDe",
+        "longname": "Rembold"
+      }
+    ],
+    "su": [
+      {
+        "id": 123,
+        "name": "ProjMan",
+        "longname": "Projektmanagement"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "23005",
+    "lsnumber": 55800,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542908,
+    "date": 20250717,
+    "startTime": 1200,
+    "endTime": 1230,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5261,
+        "name": "AD-5",
+        "longname": "AD-5"
+      },
+      {
+        "id": 5264,
+        "name": "AITS-5",
+        "longname": "AITS-5"
+      },
+      {
+        "id": 5267,
+        "name": "CPS-5",
+        "longname": "CPS-5"
+      },
+      {
+        "id": 5270,
+        "name": "ITM-5",
+        "longname": "ITM-5"
+      }
+    ],
+    "te": [
+      {
+        "id": 177,
+        "name": "RembDe",
+        "longname": "Rembold"
+      }
+    ],
+    "su": [
+      {
+        "id": 123,
+        "name": "ProjMan",
+        "longname": "Projektmanagement"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "23005",
+    "lsnumber": 55800,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542932,
+    "date": 20250716,
+    "startTime": 830,
+    "endTime": 900,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22605",
+    "lsnumber": 50800,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542935,
+    "date": 20250716,
+    "startTime": 900,
+    "endTime": 930,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22605",
+    "lsnumber": 50800,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 542938,
+    "date": 20250716,
+    "startTime": 930,
+    "endTime": 1000,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22605",
+    "lsnumber": 50800,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544704,
+    "date": 20250716,
+    "startTime": 830,
+    "endTime": 900,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 82100,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544707,
+    "date": 20250716,
+    "startTime": 900,
+    "endTime": 930,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 82100,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544710,
+    "date": 20250716,
+    "startTime": 930,
+    "endTime": 1000,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      }
+    ],
+    "te": [],
+    "su": [
+      {
+        "id": 293,
+        "name": "EreigSys",
+        "longname": "Ereignisdiskrete Systeme"
+      }
+    ],
+    "ro": [
+      {
+        "id": 3,
+        "name": "201-007",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "K90",
+    "lsnumber": 82100,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 543082,
+    "date": 20250715,
+    "startTime": 1400,
+    "endTime": 1430,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 720,
+        "name": "Bild",
+        "longname": "Bildverarbeitung"
+      }
+    ],
+    "ro": [
+      {
+        "id": 4,
+        "name": "201-018",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22405",
+    "lsnumber": 7000,
+    "sg": "32",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 543085,
+    "date": 20250715,
+    "startTime": 1430,
+    "endTime": 1500,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 720,
+        "name": "Bild",
+        "longname": "Bildverarbeitung"
+      }
+    ],
+    "ro": [
+      {
+        "id": 4,
+        "name": "201-018",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22405",
+    "lsnumber": 7000,
+    "sg": "32",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 543088,
+    "date": 20250715,
+    "startTime": 1500,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 720,
+        "name": "Bild",
+        "longname": "Bildverarbeitung"
+      }
+    ],
+    "ro": [
+      {
+        "id": 4,
+        "name": "201-018",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22405",
+    "lsnumber": 7000,
+    "sg": "32",
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544030,
+    "date": 20250709,
+    "startTime": 1400,
+    "endTime": 1430,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5258,
+        "name": "WIN-4",
+        "longname": "WIN-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 374,
+        "name": "EpplSv",
+        "longname": "Eppler"
+      }
+    ],
+    "su": [
+      {
+        "id": 1022,
+        "name": "WebAnw2",
+        "longname": "Web Anwendungen 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "22005",
+    "lsnumber": 50000,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544033,
+    "date": 20250709,
+    "startTime": 1430,
+    "endTime": 1500,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5258,
+        "name": "WIN-4",
+        "longname": "WIN-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 374,
+        "name": "EpplSv",
+        "longname": "Eppler"
+      }
+    ],
+    "su": [
+      {
+        "id": 1022,
+        "name": "WebAnw2",
+        "longname": "Web Anwendungen 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "22005",
+    "lsnumber": 50000,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544036,
+    "date": 20250709,
+    "startTime": 1500,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5258,
+        "name": "WIN-4",
+        "longname": "WIN-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 374,
+        "name": "EpplSv",
+        "longname": "Eppler"
+      }
+    ],
+    "su": [
+      {
+        "id": 1022,
+        "name": "WebAnw2",
+        "longname": "Web Anwendungen 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "22005",
+    "lsnumber": 50000,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544039,
+    "date": 20250707,
+    "startTime": 1400,
+    "endTime": 1430,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5258,
+        "name": "WIN-4",
+        "longname": "WIN-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 374,
+        "name": "EpplSv",
+        "longname": "Eppler"
+      }
+    ],
+    "su": [
+      {
+        "id": 1024,
+        "name": "SoftEng",
+        "longname": "Software Engineering"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "22305",
+    "lsnumber": 50400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544042,
+    "date": 20250707,
+    "startTime": 1430,
+    "endTime": 1500,
+    "kl": [
+      {
+        "id": 5240,
+        "name": "ITS-4_22.2",
+        "longname": "ITS-4_22.2"
+      },
+      {
+        "id": 5243,
+        "name": "ITS-4",
+        "longname": "ITS-4"
+      },
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5255,
+        "name": "WIN-4_22.2",
+        "longname": "WIN-4_22.2"
+      },
+      {
+        "id": 5258,
+        "name": "WIN-4",
+        "longname": "WIN-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 374,
+        "name": "EpplSv",
+        "longname": "Eppler"
+      }
+    ],
+    "su": [
+      {
+        "id": 1024,
+        "name": "SoftEng",
+        "longname": "Software Engineering"
+      }
+    ],
+    "ro": [
+      {
+        "id": 88,
+        "name": "205-018",
+        "longname": "017/018 zusammen"
+      }
+    ],
+    "lstext": "22305",
+    "lsnumber": 50400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544291,
+    "date": 20250711,
+    "startTime": 1430,
+    "endTime": 1500,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 3882,
+        "name": "AngMath2",
+        "longname": "Angewandte Mathematik 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 90,
+        "name": "205-135",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22105",
+    "lsnumber": 50900,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544294,
+    "date": 20250711,
+    "startTime": 1500,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 3882,
+        "name": "AngMath2",
+        "longname": "Angewandte Mathematik 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 90,
+        "name": "205-135",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22105",
+    "lsnumber": 50900,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 544297,
+    "date": 20250711,
+    "startTime": 1530,
+    "endTime": 1600,
+    "kl": [
+      {
+        "id": 5246,
+        "name": "TI-4_22.2",
+        "longname": "TI-4_22.2"
+      },
+      {
+        "id": 5249,
+        "name": "TI-4",
+        "longname": "TI-4"
+      },
+      {
+        "id": 5252,
+        "name": "TIB-4",
+        "longname": "TIB-4"
+      }
+    ],
+    "te": [
+      {
+        "id": 172,
+        "name": "KnobAn",
+        "longname": "Knoblauch"
+      }
+    ],
+    "su": [
+      {
+        "id": 3882,
+        "name": "AngMath2",
+        "longname": "Angewandte Mathematik 2"
+      }
+    ],
+    "ro": [
+      {
+        "id": 90,
+        "name": "205-135",
+        "longname": "Vorlesung"
+      }
+    ],
+    "lstext": "22105",
+    "lsnumber": 50900,
+    "activityType": "Unterricht"
+  }
+]

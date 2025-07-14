@@ -2,11 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// JA MAN KANN UND DARF DIE PUSHEN; DIE KONFIGURATION IST FÜR ALLE ZUGÄNGLICH SERVER RULES HANDLEN
 const firebaseConfig = {
   apiKey: "AIzaSyDKB-MvJjmgz2gYz68AGIyaoEozx5RB77k",
   authDomain: "yourical-enchanced.firebaseapp.com",
@@ -21,5 +25,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
+const storage = getStorage(app);
 const googleProvider = new GoogleAuthProvider();
-export { app, auth, db, googleProvider };
+export { app, auth, db, googleProvider, storage };
