@@ -1,6 +1,6 @@
-# Yourical Enchanced, Jetzt Projekt "KAFKA"
+# Yourical Enchanced, Jetzt Projekt "KAFKA" 
+<img src="./public/logo.png" height="100px">
 
-![]
 
 Dieses Projekt soll ein Superset/Erweiterung des existierenden "yourical.de"-Projektes und wird mehr zu einer zentralen Platform fürs Studium
 
