@@ -8,9 +8,9 @@ import { expect, test } from "vitest";
 
 test("Get ILIAS Client", async () => {
   const client = await loginToIlias({
-    client: "HSALBSIG", // Replace with your actual service name
-    username: process.env.USERNAME || "", // Replace with your actual username
-    password: process.env.PASSWORD || "", // Replace with your actual password
+    client: "HS-Albsig", // Replace with your actual service name
+    username: process.env.ILIAS_USERNAME || "", // Replace with your actual username
+    password: process.env.ILIAS_PASSWORD || "", // Replace with your actual password
   });
   console.log("Client:", client);
   // Write the output to a JSON file for testing purposes

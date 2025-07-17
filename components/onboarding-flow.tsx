@@ -34,7 +34,15 @@ const studyFields = [
   "IT-Security",
 ];
 
-const schools = ["Hochschule Albstadt-Sigmaringen"];
+export type studyFieldType =
+  | "Technische Informatik"
+  | "Wirtschaftsinformatik"
+  | "IT-Security"
+  | "Other";
+
+export type schoolType = "Hochschule Albstadt-Sigmaringen";
+
+export const schools = ["Hochschule Albstadt-Sigmaringen"];
 
 export function OnboardingFlow({ user }: OnboardingFlowProps) {
   const [step, setStep] = useState(1);
@@ -86,6 +94,7 @@ export function OnboardingFlow({ user }: OnboardingFlowProps) {
       return (
         studyField && (studyField !== "Other" || customField.trim().length > 0)
       );
+    if (step === 3) return displayName.trim().length > 0;
     return false;
   };
 

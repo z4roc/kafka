@@ -36,6 +36,14 @@ import {
   X,
 } from "lucide-react";
 import { useAuthStore } from "@/hooks/auth_hook";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select";
+import { schools } from "./onboarding-flow";
 
 export function AccountSettings() {
   const { user, loading, setUser } = useAuthStore();
@@ -47,7 +55,6 @@ export function AccountSettings() {
   } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const [file, setFile] = useState<File | null>(null);
   const [isUploadingAvatar, setIsUploadingAvatar] = useState(false);
 
   // Form state
@@ -301,14 +308,26 @@ export function AccountSettings() {
               <label htmlFor="schoolName" className="text-sm font-medium">
                 School Name
               </label>
-              <Input
-                id="schoolName"
-                value={formData.schoolName}
-                onChange={(e) =>
-                  handleInputChange("schoolName", e.target.value)
+
+              <Select
+                onValueChange={(value) =>
+                  handleInputChange("schoolName", value)
                 }
-                placeholder="Enter your school name"
-              />
+              >
+                <SelectTrigger className="h-12">
+                  <SelectValue
+                    defaultValue={user.schoolName}
+                    placeholder={user.schoolName}
+                  />
+                </SelectTrigger>
+                <SelectContent>
+                  {schools.map((school) => (
+                    <SelectItem key={school} value={school}>
+                      {school}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             <div className="space-y-2">

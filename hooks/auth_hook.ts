@@ -6,13 +6,14 @@ import {
 } from "firebase/auth";
 import { create } from "zustand";
 import { doc, onSnapshot, type DocumentData } from "firebase/firestore";
+import { schoolType, studyFieldType } from "@/components/onboarding-flow";
 export interface User {
   uid: string;
   email: string | null;
   displayName: string | null;
   createdAt?: string;
-  schoolName?: string;
-  studyField?: string;
+  schoolName?: schoolType;
+  studyField?: studyFieldType;
   onboardingCompleted?: boolean;
   avatarUrl?: string;
   updatedAt?: string;

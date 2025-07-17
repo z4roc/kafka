@@ -1,9 +1,11 @@
+import axios from "axios";
 import * as soap from "soap";
 const WSDL_URL =
   "https://elearning.hs-albsig.de/webservice/soap/server.php?wsdl";
 const ENDPOINT_URL =
   "https://elearning.hs-albsig.de:443/webservice/soap/server.php";
 const NAMESPACE = "urn:ilUserAdministration";
+import { soap as strongsoap } from "strong-soap";
 
 interface LoginArgs {
   client: string; // e.g. your “service name” in ILIAS
@@ -109,35 +111,33 @@ async function getCoursesForUser(
   userId: number,
   status = 1 /* MEMBER only */
 ): Promise<string> {
-  // 1) create & configure client
-  const client = await soap.createClientAsync(WSDL_URL, {});
-  client.setEndpoint(ENDPOINT_URL);
+  const url = "https://elearning.hs-albsig.de:443/webservice/soap/server.php";
 
-  // reuse your BasicAuth or token-based security if needed…
-  // client.setSecurity(new soap.BasicAuthSecurity(wsUser, wsPass));
-  client.addHttpHeader("SOAPAction", `"${NAMESPACE}#getCoursesForUser"`);
-  // 2) Build the RPC-encoded parameters XML
-  // ILIAS wants a flat "parameters" string containing columns "user_id" and "status"
-  // One common pattern is to send a little XML snippet:
-  let parameters = `user_id=${userId};status=${status}`;
-  parameters.trim();
-  parameters = "";
+  // Construct the parameters XML string
+  const parametersXml = `
+    <params>
+      <user_id>${userId}</user_id>
+      <status>${status}</status>
+    </params>
+  `;
 
-  client.on("request", (xml, eid) => {
-    console.log("SOAP Request EID:", eid);
-    console.log("Request XML:", xml);
-  });
-  client.addHttpHeader("SOAPAction", `"${NAMESPACE}#getCoursesForUser"`);
-  // 3) Call the method
-  // RPC/encoded calls take a single object with named parts, just like login
-  const response = await client.getCoursesForUserAsync({
-    sid,
-    parameters,
-  });
+  const args = {
+    sid: sid,
+    parameters: parametersXml,
+  };
 
-  // 4) response.xml is a flat string containing an XMLResultSet.
-  // You can parse it or hand it off to your XML parser.
-  return response.xml as string;
+  try {
+    const client = await soap.createClientAsync(WSDL_URL);
+    client.on("request", (xml, eid) => {
+      console.log("SOAP Request EID:", eid);
+      console.log("Request XML:", xml);
+    });
+    const result = await client.getCoursesForUserAsync(args);
+    return result[0].xml; // Returns the XML result set
+  } catch (error) {
+    console.error("SOAP Error:", error);
+    throw error;
+  }
 }
 
 export { loginToIlias, getUserIdBySid, getCoursesForUser, getRolesForUser };
