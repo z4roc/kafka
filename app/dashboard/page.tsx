@@ -30,6 +30,8 @@ import {
   Plus,
   ChevronRight,
 } from "lucide-react";
+import { useAuthStore } from "@/hooks/auth_hook";
+import { t } from "i18next";
 
 // Mock data - replace with actual data from Firebase
 const mockData = {
@@ -128,6 +130,8 @@ export default function DashboardPage() {
 
   const weekDates = getWeekDates();
 
+  const { user, loading, setUser } = useAuthStore();
+
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -153,7 +157,7 @@ export default function DashboardPage() {
           {/* Welcome Card */}
           <Card className="md:col-span-3">
             <CardHeader>
-              <CardTitle className="text-2xl">Welcome back, John! 👋</CardTitle>
+              <CardTitle className="text-2xl">{t("welcome", { name : user?.displayName || "User" })}</CardTitle>
               <CardDescription>
                 Here's what's happening with your studies today, March 10, 2024
               </CardDescription>
