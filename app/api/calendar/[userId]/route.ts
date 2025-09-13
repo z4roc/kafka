@@ -8,10 +8,11 @@ import { convertWebUntisLessons, WebUntisLesson } from "@/lib/webuntis-utils";
 import { studyFieldType } from "@/types/types";
 
 export async function GET(
-  request: Request,
-  { params }: { params: Promise<{ slug: string }> }
+  request: NextRequest,
+  { params }: { params: Promise<{ userId: string }> }
 ) {
-  const userId = (await params).slug;
+  const { userId } = await params;
+
   // Fetch calendar events for the user
   const subjects = await getUserSubjects(userId);
   const userCourseOfStudy = await getUserCourseOfStudy(userId);
