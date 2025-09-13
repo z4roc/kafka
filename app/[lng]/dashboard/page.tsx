@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
+
 import {
   Card,
   CardContent,
@@ -30,6 +32,8 @@ import {
   Plus,
   ChevronRight,
 } from "lucide-react";
+import { useAuthStore } from "@/hooks/auth_hook";
+import Today from "@/components/ui/today";
 
 // Mock data - replace with actual data from Firebase
 const mockData = {
@@ -107,6 +111,7 @@ const currentDate = new Date();
 const currentDay = currentDate.getDay();
 
 export default function DashboardPage() {
+  const { t } = useTranslation("common");
   const [selectedDay, setSelectedDay] = useState(
     currentDay === 0 ? 6 : currentDay - 1
   ); // Convert Sunday (0) to Saturday (6)
@@ -127,6 +132,8 @@ export default function DashboardPage() {
   };
 
   const weekDates = getWeekDates();
+
+  const { user, loading, setUser } = useAuthStore();
 
   return (
     <>
@@ -153,9 +160,9 @@ export default function DashboardPage() {
           {/* Welcome Card */}
           <Card className="md:col-span-3">
             <CardHeader>
-              <CardTitle className="text-2xl">Welcome back, John! 👋</CardTitle>
+              <CardTitle className="text-2xl">{t("welcome", { name : user?.displayName || "User" })}</CardTitle>
               <CardDescription>
-                Here's what's happening with your studies today, March 10, 2024
+                {t("news")}<Today/>
               </CardDescription>
             </CardHeader>
           </Card>
@@ -165,7 +172,7 @@ export default function DashboardPage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
-                This Week
+                {t("tweek")}
               </CardTitle>
               <CardDescription>March 10 - March 16, 2024</CardDescription>
             </CardHeader>
