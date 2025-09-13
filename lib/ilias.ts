@@ -5,7 +5,6 @@ const WSDL_URL =
 const ENDPOINT_URL =
   "https://elearning.hs-albsig.de:443/webservice/soap/server.php";
 const NAMESPACE = "urn:ilUserAdministration";
-import { soap as strongsoap } from "strong-soap";
 
 interface LoginArgs {
   client: string; // e.g. your “service name” in ILIAS

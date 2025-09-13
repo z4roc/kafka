@@ -1,8 +1,30 @@
 import type { Subject, UserSubject } from "@/types/subjects";
+import { db } from "@/lib/firebase";
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  setDoc,
+  updateDoc,
+  writeBatch,
+} from "firebase/firestore";
 import subjectsData from "@/data/subjects.json";
+import { webuntisApi } from "./webuntis_api";
+import { write } from "fs";
 
 export const getAllSubjects = (): Subject[] => {
   return subjectsData.filter((subject) => subject.active);
+};
+
+export const setAllSubjects = async (): Promise<void> => {
+  const subjects = await webuntisApi.getSubjects();
+  const batch = writeBatch(db);
+  subjects.forEach((subject) => {
+    const subjectRef = doc(collection(db, "subjects"), subject.id.toString());
+    batch.set(subjectRef, subject);
+  });
+  await batch.commit();
 };
 
 export const getSubjectById = (id: number): Subject | undefined => {

@@ -4,10 +4,26 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ChevronLeft, ChevronRight, Calendar, Grid3X3 } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Calendar,
+  Grid3X3,
+  FolderSync,
+  RefreshCcw,
+} from "lucide-react";
 import { WeekView } from "@/components/week-view";
 import { MonthView } from "@/components/month-view";
 import type { CalendarEvent } from "@/lib/webuntis-utils";
+import { useAuthStore } from "@/hooks/auth_hook";
+import {
+  Dialog,
+  DialogClose,
+  DialogFooter,
+  DialogHeader,
+  DialogTrigger,
+} from "./ui/dialog";
+import { ICSLinkDialog } from "./ics-link-dialog";
 
 interface CalendarViewProps {
   classes: CalendarEvent[];
@@ -18,6 +34,8 @@ type ViewMode = "week" | "month";
 export function CalendarView({ classes }: CalendarViewProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [viewMode, setViewMode] = useState<ViewMode>("week");
+
+  const { user } = useAuthStore();
 
   const navigateDate = (direction: "prev" | "next") => {
     const newDate = new Date(currentDate);
@@ -95,8 +113,8 @@ export function CalendarView({ classes }: CalendarViewProps) {
                 </Button>
               </div>
             </div>
-
             <div className="flex items-center space-x-2">
+              <ICSLinkDialog />
               <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-lg p-1">
                 <Button
                   variant={viewMode === "week" ? "default" : "ghost"}

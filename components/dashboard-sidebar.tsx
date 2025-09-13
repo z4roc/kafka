@@ -144,15 +144,15 @@ export function DashboardSidebar() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="gap-2 p-2 text-red-600">
-                  <Button
+                <DropdownMenuItem asChild>
+                  <Link
                     onClick={onLogoutClick}
-                    className="w-full"
-                    variant={"ghost"}
+                    className="gap-2 p-2 text-red-600"
+                    href={"/"}
                   >
                     <LogOut className="h-4 w-4" />
                     Sign Out
-                  </Button>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

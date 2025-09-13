@@ -1,5 +1,6 @@
 "use client";
 
+import { studyFields, type OnboardingFlowProps } from "@/types/types";
 import { useState } from "react";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
@@ -23,22 +24,6 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { BookOpen, GraduationCap, School } from "lucide-react";
 import { useAuthStore } from "@/hooks/auth_hook";
-
-interface OnboardingFlowProps {
-  user: User;
-}
-
-const studyFields = [
-  "Technische Informatik",
-  "Wirtschaftsinformatik",
-  "IT-Security",
-];
-
-export type studyFieldType =
-  | "Technische Informatik"
-  | "Wirtschaftsinformatik"
-  | "IT-Security"
-  | "Other";
 
 export type schoolType = "Hochschule Albstadt-Sigmaringen";
 

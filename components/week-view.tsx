@@ -54,8 +54,12 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
     const endHour = endTime.getHours() + endTime.getMinutes() / 60;
     const duration = endHour - startHour;
 
-    const top = (startHour - 7) * 60 + 40; // 60px per hour + header height
-    const height = duration * 60; // 60px per hour
+    console.log(
+      `Class ${classEvent.title} starts at ${startHour} and lasts for ${duration} hours`
+    );
+
+    const top = (startHour - 7) * 60; // 60px per hour
+    const height = duration * 65; // 60px per hour
 
     return { top, height };
   };
@@ -140,7 +144,7 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
                 return (
                   <Card
                     key={classEvent.id}
-                    className="absolute left-1 right-1 p-2 shadow-sm border-l-4 hover:shadow-md transition-shadow cursor-pointer"
+                    className="absolute left-2 right-2 p-1 shadow-sm border-l-4 hover:shadow-md transition-shadow cursor-pointer"
                     style={{
                       top: `${top}px`,
                       height: `${height}px`,
@@ -150,7 +154,7 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
                   >
                     <div className="space-y-1">
                       <div
-                        className="font-medium text-sm truncate"
+                        className="font-medium text-xs truncate"
                         style={{ color: classEvent.color }}
                       >
                         {classEvent.title}
@@ -176,14 +180,6 @@ export function WeekView({ currentDate, classes }: WeekViewProps) {
                             <User className="h-3 w-3 mr-1" />
                             {classEvent.professor}
                           </div>
-                          {classEvent.classes.length > 0 && (
-                            <div className="flex items-center text-xs text-gray-600 dark:text-gray-400 truncate">
-                              <Users className="h-3 w-3 mr-1" />
-                              {classEvent.classes.slice(0, 2).join(", ")}
-                              {classEvent.classes.length > 2 &&
-                                ` +${classEvent.classes.length - 2}`}
-                            </div>
-                          )}
                         </>
                       )}
                     </div>

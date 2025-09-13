@@ -17,30 +17,40 @@ import {
   convertWebUntisLessons,
   groupConsecutiveLessons,
 } from "@/lib/webuntis-utils";
+import { getUserSubjects } from "@/lib/subjects";
 
 export default function CalendarPage() {
   const [lessons, setLessons] = useState<CalendarEvent[] | null>([]);
   useEffect(() => {
     // Fetch classes from WebUntis API
-    fetch("/api/webuntis")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
+    getUserSubjects().then((subjects) => {
+      console.log("User subjects:", subjects);
+      fetch("/api/webuntis", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ subjects }),
       })
-      .then((data) => {
-        console.log("Fetched lessons:", data);
-        const events = convertWebUntisLessons(data);
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          console.log("Fetched lessons:", data);
+          const events = convertWebUntisLessons(data);
 
-        // Group consecutive lessons of the same subject
-        const groupedEvents = groupConsecutiveLessons(events);
-        setLessons(groupedEvents);
-      })
-      .catch((error) => {
-        console.error("Error fetching lessons:", error);
-        // Fallback to mock data if API fails
-      });
+          // Group consecutive lessons of the same subject
+          const groupedEvents = groupConsecutiveLessons(events);
+          setLessons(groupedEvents);
+        })
+        .catch((error) => {
+          console.error("Error fetching lessons:", error);
+          // Fallback to mock data if API fails
+        });
+    });
   }, []);
 
   return (

@@ -6,11 +6,16 @@ type ResponseData = {
   message: string;
 };
 
-export async function GET() {
+export async function POST(request: Request) {
   try {
+    const { subjects } = await request.json();
+
     const webuntis = new WebUntisAPI();
     await webuntis.login();
-    const lessons = await webuntis.getTimetable();
+    const lessons = await webuntis.getTimeTableByClasses(
+      subjects,
+      "Technische Informatik"
+    );
     await webuntis.logout();
 
     return new Response(JSON.stringify(lessons), {

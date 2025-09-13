@@ -1,4 +1,7 @@
-import { SchoolYear, WebUntis } from "webuntis";
+import { Subject, UserSubject } from "@/types/subjects";
+import { FieldMap, studyFieldType } from "@/types/types";
+import { Lesson, SchoolYear, WebUntis } from "webuntis";
+import { writeFileSync } from "fs";
 
 // Overwrite in .env file
 const default_settings = {
@@ -34,9 +37,6 @@ export class WebUntisAPI {
     );
   }
 
-  // Just for testing purposes
-  private TI_4: number = 5246;
-
   // login für WebUntis
   async login() {
     try {
@@ -68,32 +68,32 @@ export class WebUntisAPI {
   async getSchoolYears() {
     return await this.webuntis.getSchoolyears();
   }
+
+  async getSchoolYearByName(name: string) {
+    const years = await this.getSchoolYears();
+    const year = years.find((y) => y.name === name);
+    if (!year) {
+      throw new Error(`School year with name ${name} not found.`);
+    }
+    return year;
+  }
   // Alle Fakultäten / Studiengänge
   async getDepartments() {
     return await this.webuntis.getDepartments();
   }
 
   async getClasses() {
-    if (!this.currentSchoolyear) {
-      this.currentSchoolyear = await this.getCurrentSchoolYear();
-    }
     return await this.webuntis.getClasses(
       this.validateSession,
-      this.currentSchoolyear.id
+      this.currentSchoolyear!.id
     );
   }
 
   async getSubjects() {
-    if (!this.currentSchoolyear) {
-      this.currentSchoolyear = await this.getCurrentSchoolYear();
-    }
     return await this.webuntis.getSubjects(this.validateSession);
   }
 
   async getRooms() {
-    if (!this.currentSchoolyear) {
-      this.currentSchoolyear = await this.getCurrentSchoolYear();
-    }
     return await this.webuntis.getRooms(this.validateSession);
   }
 
@@ -101,7 +101,10 @@ export class WebUntisAPI {
     return await this.webuntis.getTimegrid(this.validateSession);
   }
 
-  async getTimetable(year: SchoolYear | null = this.currentSchoolyear) {
+  async getTimetableForClass(
+    classId: number = 5549,
+    year: SchoolYear | null = this.currentSchoolyear
+  ) {
     if (!this.currentSchoolyear) {
       this.currentSchoolyear = await this.getCurrentSchoolYear();
     }
@@ -123,9 +126,49 @@ export class WebUntisAPI {
     return await this.webuntis.getTimetableForRange(
       startDate,
       endDate,
-      this.TI_4,
+      classId,
       WebUntis.TYPES.CLASS
     );
+  }
+
+  setCurrentSchoolyear(year: SchoolYear) {
+    this.currentSchoolyear = year;
+  }
+
+  async getTimeTableByClasses(
+    enrolledSubjects: UserSubject[],
+    studyField: studyFieldType
+  ) {
+    this.currentSchoolyear = await this.getSchoolYearByName("2025/2026");
+    const classList = await this.getClasses();
+    const class_key = FieldMap[studyField]; // "TI", "WI", "ITS"
+
+    const filteredClasses = classList.filter((c) =>
+      c.name.startsWith(class_key)
+    );
+
+    const subjects = await this.getSubjects();
+    const enrolled_untis_subjects_ids = subjects
+      .filter((s) => enrolledSubjects.some((es) => es.id === s.id))
+      .map((s) => s.id);
+
+    let timetableEntries: Lesson[] = [];
+    for (const classId of filteredClasses.map((c) => c.id)) {
+      const entries = await this.getTimetableForClass(classId);
+      timetableEntries = timetableEntries.concat(entries);
+    }
+
+    const uncompleted_subjects = enrolledSubjects.filter((s) => !s.completed);
+
+    const filteredTimetable = timetableEntries.filter((entry) =>
+      uncompleted_subjects.some((us) => us.id === entry.su[0]?.id)
+    );
+
+    console.log(
+      `Fetched ${timetableEntries.length} timetable entries for enrolled subjects.`
+    );
+
+    return filteredTimetable;
   }
 }
 
