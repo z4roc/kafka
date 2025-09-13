@@ -9,7 +9,6 @@ async function logout() {
   try {
     await signOut(auth);
     setUser(null); // Clear user state in the store
-    console.log("User signed out successfully");
   } catch (error: any) {
     console.error("Sign out failed:", error.message);
   }

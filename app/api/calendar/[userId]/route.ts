@@ -1,4 +1,4 @@
-import { getUserSubjects } from "@/lib/subjects";
+import { getUserCourseOfStudy, getUserSubjects } from "@/lib/subjects";
 import { webuntisApi } from "@/lib/webuntis_api";
 import ical from "ical-generator";
 import {
@@ -6,6 +6,7 @@ import {
   convertWebUntisToCalendarEvent,
   WebUntisLesson,
 } from "@/lib/webuntis-utils";
+import { studyFieldType } from "@/types/types";
 export async function GET(
   request: Request,
   { params }: { params: { userId: string } }
@@ -13,10 +14,11 @@ export async function GET(
   const { userId } = params;
   // Fetch calendar events for the user
   const subjects = await getUserSubjects(userId);
+  const userCourseOfStudy = await getUserCourseOfStudy(userId);
 
   const events = await webuntisApi.getTimeTableByClasses(
     subjects,
-    "Technische Informatik"
+    (userCourseOfStudy as studyFieldType) || "Other"
   );
 
   const parsedEvents = convertWebUntisLessons(events as WebUntisLesson[]);

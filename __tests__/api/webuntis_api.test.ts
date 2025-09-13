@@ -61,3 +61,39 @@ test("Get All Subjects", async () => {
   );
   expect(subjects).toBeDefined();
 });
+
+test("Get Timetable for school year", async () => {
+  webuntisApi.setCurrentSchoolyear(
+    await webuntisApi.getSchoolYearByName("2025/2026")
+  );
+  const timetable = await webuntisApi.getTimetableForClass(5549);
+  // Write the output to a JSON file for testing purposes
+  const fs = await import("fs/promises");
+  await fs.writeFile(
+    "./__tests__/api/out/timetable_output.json",
+    JSON.stringify(timetable, null, 2)
+  );
+  expect(timetable).toBeDefined();
+});
+
+test("Get All Teachers", async () => {
+  const teachers = await webuntisApi.getTeachers();
+  // Write the output to a JSON file for testing purposes
+  const fs = await import("fs/promises");
+  await fs.writeFile(
+    "./__tests__/api/out/teachers_output.json",
+    JSON.stringify(teachers, null, 2)
+  );
+  expect(teachers).toBeDefined();
+});
+
+test("Get All Rooms", async () => {
+  const rooms = await webuntisApi.getRooms();
+  // Write the output to a JSON file for testing purposes
+  const fs = await import("fs/promises");
+  await fs.writeFile(
+    "./__tests__/api/out/rooms_output.json",
+    JSON.stringify(rooms, null, 2)
+  );
+  expect(rooms).toBeDefined();
+});
