@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { WebUntisAPI } from "@/lib/webuntis_api";
 import { Lesson } from "webuntis";
+import { writeFile } from "fs/promises";
 
 type ResponseData = {
   message: string;
@@ -17,6 +18,10 @@ export async function POST(request: Request) {
       "Technische Informatik"
     );
     await webuntis.logout();
+
+    await writeFile("./lessons.json", JSON.stringify(lessons, null, 2), {
+      encoding: "utf-8",
+    });
 
     return new Response(JSON.stringify(lessons), {
       status: 200,

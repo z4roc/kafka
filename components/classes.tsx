@@ -13,14 +13,17 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { BookOpen } from "lucide-react";
+import { useAuthStore } from "@/hooks/auth_hook";
 
 export default function Classes() {
   const [subjects, setSubjects] = useState<UserSubject[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const { user } = useAuthStore();
 
   const loadSubjects = async () => {
+    if (!user?.uid) return; // Wait until user.uid is defined
     try {
-      const userSubjects = await getUserSubjects();
+      const userSubjects = await getUserSubjects(user.uid);
       setSubjects(userSubjects);
     } catch (error) {
       console.error("Failed to load subjects:", error);
@@ -30,8 +33,10 @@ export default function Classes() {
   };
 
   useEffect(() => {
-    loadSubjects();
-  }, []);
+    if (user?.uid) {
+      loadSubjects();
+    }
+  }, [user?.uid]);
 
   if (isLoading) {
     return (

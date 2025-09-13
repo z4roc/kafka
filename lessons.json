@@ -1,0 +1,1215 @@
+[
+  {
+    "id": 546051,
+    "date": 20251010,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546054,
+    "date": 20251017,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546057,
+    "date": 20251024,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546060,
+    "date": 20251031,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546063,
+    "date": 20251107,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546066,
+    "date": 20251114,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546069,
+    "date": 20251121,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546072,
+    "date": 20251128,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546075,
+    "date": 20251205,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546078,
+    "date": 20251212,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546081,
+    "date": 20251219,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546084,
+    "date": 20260109,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546087,
+    "date": 20260116,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 546090,
+    "date": 20260123,
+    "startTime": 1130,
+    "endTime": 1300,
+    "kl": [
+      {
+        "id": 5537,
+        "name": "ITS-3",
+        "longname": "ITS-3"
+      },
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      },
+      {
+        "id": 5543,
+        "name": "WIN-3",
+        "longname": "WIN-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 171,
+        "name": "HoweWa",
+        "longname": "Hower"
+      }
+    ],
+    "su": [
+      {
+        "id": 40,
+        "name": "Algo",
+        "longname": "Algorithmik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 100,
+        "name": "online",
+        "longname": "online"
+      }
+    ],
+    "lstext": "online",
+    "lsnumber": 124400,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547227,
+    "date": 20250930,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547230,
+    "date": 20251007,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547233,
+    "date": 20251014,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547236,
+    "date": 20251021,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547239,
+    "date": 20251028,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547242,
+    "date": 20251104,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547245,
+    "date": 20251111,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547248,
+    "date": 20251118,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547251,
+    "date": 20251125,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547254,
+    "date": 20251202,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547257,
+    "date": 20251209,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547260,
+    "date": 20251216,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547263,
+    "date": 20251223,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547266,
+    "date": 20260113,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  },
+  {
+    "id": 547269,
+    "date": 20260120,
+    "startTime": 1400,
+    "endTime": 1530,
+    "kl": [
+      {
+        "id": 5540,
+        "name": "TI-3",
+        "longname": "TI-3"
+      }
+    ],
+    "te": [
+      {
+        "id": 174,
+        "name": "MateUt",
+        "longname": "Matecki"
+      }
+    ],
+    "su": [
+      {
+        "id": 100,
+        "name": "SwTech",
+        "longname": "Softwaretechnik"
+      }
+    ],
+    "ro": [
+      {
+        "id": 1,
+        "name": "201-005",
+        "longname": "Vorlesungsraum"
+      }
+    ],
+    "lstext": "21400",
+    "lsnumber": 124500,
+    "activityType": "Unterricht"
+  }
+]
