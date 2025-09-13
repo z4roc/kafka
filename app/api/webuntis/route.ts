@@ -19,9 +19,11 @@ export async function POST(request: Request) {
     );
     await webuntis.logout();
 
-    await writeFile("./lessons.json", JSON.stringify(lessons, null, 2), {
-      encoding: "utf-8",
-    });
+    if (process.env.NODE_ENV === "development") {
+      await writeFile("./lessons.json", JSON.stringify(lessons, null, 2), {
+        encoding: "utf-8",
+      });
+    }
 
     return new Response(JSON.stringify(lessons), {
       status: 200,
