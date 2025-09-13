@@ -1,0 +1,55 @@
+{
+  "welcome": "Hallo {{name}}",
+  "news": "Hier ist was heute alles passiert ist,",
+  "tweek": "Diese Woche",
+  "month": "Monat",
+  "year": "Jahr",
+
+  "months": {
+    "january": "Januar",
+    "february": "Februar",
+    "march": "März",
+    "april": "April",
+    "may": "Mai",
+    "june": "Juni",
+    "july": "Juli",
+    "august": "August",
+    "september": "September",
+    "october": "Oktober",
+    "november": "November",
+    "december": "Dezember"
+  },
+
+  "weekdays": {
+    "monday": {
+      "long": "Montag",
+      "short": "Mo"
+    },
+    "tuesday": {
+      "long": "Dienstag",
+      "short": "Di"
+    },
+    "wednesday": {
+      "long": "Mittwoch",
+      "short": "Mi"
+    },
+    "thursday": {
+      "long": "Donnerstag",
+      "short": "Do"
+    },
+    "friday": {
+      "long": "Freitag",
+      "short": "Fr"
+    },
+    "saturday": {
+      "long": "Samstag",
+      "short": "Sa"
+    },
+    "sunday": {
+      "long": "Sonntag",
+      "short": "So"
+    }
+  },
+
+  "weekProgress": "Wochenfortschritt"
+}

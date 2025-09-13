@@ -1,0 +1,55 @@
+{
+  "welcome": "Hello {{name}}",
+  "news": "Here is what happened today,",
+  "tweek": "This week",
+  "month": "Month",
+  "year": "Year",
+
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+
+  "weekdays": {
+    "monday": {
+      "long": "Monday",
+      "short": "Mon"
+    },
+    "tuesday": {
+      "long": "Tuesday",
+      "short": "Tue"
+    },
+    "wednesday": {
+      "long": "Wednesday",
+      "short": "Wed"
+    },
+    "thursday": {
+      "long": "Thursday",
+      "short": "Thu"
+    },
+    "friday": {
+      "long": "Friday",
+      "short": "Fri"
+    },
+    "saturday": {
+      "long": "Saturday",
+      "short": "Sat"
+    },
+    "sunday": {
+      "long": "Sunday",
+      "short": "Sun"
+    }
+  },
+
+  "weekProgress": "Week progress"
+}

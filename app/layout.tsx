@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { useAuthStore } from "@/hooks/auth_hook";
 import { useEffect } from "react";
+import "@/i18n/i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
