@@ -35,8 +35,6 @@ export function CalendarView({ classes }: CalendarViewProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [viewMode, setViewMode] = useState<ViewMode>("week");
 
-  const { user } = useAuthStore();
-
   const navigateDate = (direction: "prev" | "next") => {
     const newDate = new Date(currentDate);
     if (viewMode === "week") {

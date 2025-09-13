@@ -132,15 +132,17 @@
     "longName": "Algorithmik",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 426,
     "name": "Alt FT",
-    "longName": "Alt FT",
+    "longName": "Alternative Fügetechnologie",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 445,
@@ -203,7 +205,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "8080ff"
+    "backColor": "808000"
   },
   {
     "id": 385,
@@ -273,7 +275,9 @@
     "name": "AW",
     "longName": "Arbeitswissenschaft",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 286,
@@ -307,7 +311,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 344,
@@ -405,8 +409,8 @@
     "longName": "Betriebssysteme und Netzwerke 2",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 260,
@@ -436,9 +440,11 @@
   {
     "id": 169,
     "name": "BWL B",
-    "longName": "Betriebswirtschaftslehre/Betriebsorganisation",
+    "longName": "BWL B Betriebsorganisation",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ffff"
   },
   {
     "id": 301,
@@ -455,8 +461,8 @@
     "longName": "Betriebswirtschaftslehre und Management",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 185,
@@ -544,7 +550,9 @@
     "name": "Chemie",
     "longName": "Chemie",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d2cbfa"
   },
   {
     "id": 330,
@@ -579,8 +587,8 @@
     "longName": "Cyber Security",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "800040"
+    "foreColor": "000000",
+    "backColor": "c0c0c0"
   },
   {
     "id": 355,
@@ -589,7 +597,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "800040"
+    "backColor": "8000ff"
   },
   {
     "id": 216,
@@ -615,8 +623,8 @@
     "longName": "Datenbanken 2",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ff8000"
+    "foreColor": "ffffff",
+    "backColor": "008080"
   },
   {
     "id": 289,
@@ -642,8 +650,8 @@
     "longName": "Digitale Forensik",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ff8000"
+    "foreColor": "ffffff",
+    "backColor": "008080"
   },
   {
     "id": 348,
@@ -675,11 +683,11 @@
   {
     "id": 210,
     "name": "E-BusGP",
-    "longName": "E-Business u. unternehmensübergreif. Geschäftsproz",
+    "longName": "E-Business und unternehmensübergreifeifende Geschäftsprozesse",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "008040"
+    "foreColor": "000000",
+    "backColor": "00ff80"
   },
   {
     "id": 269,
@@ -706,7 +714,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "a92ceb"
+    "backColor": "ff8040"
   },
   {
     "id": 2,
@@ -724,7 +732,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ff80ff"
+    "backColor": "ffff80"
   },
   {
     "id": 52,
@@ -765,7 +773,7 @@
   {
     "id": 67,
     "name": "EinfWissArb",
-    "longName": "Einführung Wissenschaftliches Arbeiten",
+    "longName": "Wahlpflichtblock 1: Einführung Wissenschaftliches Arbeiten",
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
@@ -886,7 +894,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c1bdb6"
   },
   {
     "id": 90,
@@ -894,8 +902,8 @@
     "longName": "ERP-Systeme 1",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 106,
@@ -904,7 +912,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 338,
@@ -918,11 +926,11 @@
   {
     "id": 339,
     "name": "ERP-Reorg",
-    "longName": "ERP-Reorg",
+    "longName": "WPM ERP-Systeme- Reorganisation",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "10fc4c"
+    "foreColor": "ffffff",
+    "backColor": "808040"
   },
   {
     "id": 250,
@@ -1082,7 +1090,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 16,
@@ -1262,7 +1270,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 233,
@@ -1289,14 +1297,16 @@
     "alternateName": "",
     "active": true,
     "foreColor": "4da9ff",
-    "backColor": "ffffff"
+    "backColor": "7fffffff"
   },
   {
     "id": 391,
     "name": "H+V TT",
-    "longName": "H+V TT",
+    "longName": "Herstellung und Verarbeitung technischer Textilien",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "808000"
   },
   {
     "id": 65,
@@ -1548,7 +1558,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 77,
@@ -1600,7 +1610,9 @@
     "name": "IT-GRC",
     "longName": "IT-GRC",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "3bd4ff",
+    "backColor": "ffffff"
   },
   {
     "id": 229,
@@ -1672,7 +1684,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 149,
@@ -1680,8 +1692,8 @@
     "longName": "IT-Sicherheitsmanagement",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ff00ff"
+    "foreColor": "4da9ff",
+    "backColor": "ffffff"
   },
   {
     "id": 328,
@@ -1689,8 +1701,8 @@
     "longName": "IT-Sicherheit",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "008080"
+    "foreColor": "000000",
+    "backColor": "00ffff"
   },
   {
     "id": 81,
@@ -1767,7 +1779,9 @@
     "name": "KonfMa",
     "longName": "Konfektionsmaschinen",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "f3f1fe"
   },
   {
     "id": 189,
@@ -1820,8 +1834,8 @@
     "longName": "Kryptologie 2",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 248,
@@ -1839,7 +1853,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "800040"
+    "backColor": "8000ff"
   },
   {
     "id": 358,
@@ -2127,8 +2141,8 @@
     "longName": "Mobile und Cloud Forensik",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ff00ff"
+    "foreColor": "4da9ff",
+    "backColor": "ffffff"
   },
   {
     "id": 146,
@@ -2136,8 +2150,8 @@
     "longName": "Mobile Systeme und Cloud",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ff00ff"
+    "foreColor": "4da9ff",
+    "backColor": "ffffff"
   },
   {
     "id": 299,
@@ -2181,8 +2195,8 @@
     "longName": "Mustererkennung",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "008080"
+    "foreColor": "000000",
+    "backColor": "00ffff"
   },
   {
     "id": 79,
@@ -2262,7 +2276,7 @@
   {
     "id": 139,
     "name": "OffSich",
-    "longName": "OffensiveSicherheitsmethoden",
+    "longName": "Offensive Sicherheitsmethoden",
     "alternateName": "",
     "active": true,
     "foreColor": "4da9ff",
@@ -2283,8 +2297,8 @@
     "longName": "Operations Research",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 282,
@@ -2896,7 +2910,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 265,
@@ -2913,8 +2927,8 @@
     "longName": "Produktionsmanagement",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "055365"
+    "foreColor": "000000",
+    "backColor": "8080ff"
   },
   {
     "id": 283,
@@ -2932,7 +2946,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ff80ff"
+    "backColor": "ffff80"
   },
   {
     "id": 36,
@@ -2941,7 +2955,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 141,
@@ -2958,8 +2972,8 @@
     "longName": "Projektmanagement",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "ffff00"
+    "foreColor": "ffffff",
+    "backColor": "008080"
   },
   {
     "id": 295,
@@ -3106,30 +3120,38 @@
   {
     "id": 168,
     "name": "QM",
-    "longName": "Quality Management",
+    "longName": "Qualitätsmanagement",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "004bc0"
   },
   {
     "id": 435,
     "name": "QM 1",
     "longName": "Quality Management 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 449,
     "name": "QM 2",
-    "longName": "QM 2",
+    "longName": "Quality Management II",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ff00"
   },
   {
     "id": 389,
     "name": "QM F+E",
-    "longName": "QM F+E",
+    "longName": "Qualitätsmanagement in text. Prozessen",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "808000"
   },
   {
     "id": 370,
@@ -3182,8 +3204,8 @@
     "longName": "Rechnertechnik",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 115,
@@ -3272,8 +3294,8 @@
     "longName": "Sensoren und Aktoren",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "008080"
+    "foreColor": "000000",
+    "backColor": "00ffff"
   },
   {
     "id": 102,
@@ -3289,7 +3311,9 @@
     "name": "SimTech",
     "longName": "Simulationstechnik",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "4da9ff",
+    "backColor": "7fffffff"
   },
   {
     "id": 222,
@@ -3474,7 +3498,9 @@
     "name": "TexChem",
     "longName": "Textilchemie",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ac9ff4"
   },
   {
     "id": 444,
@@ -3490,14 +3516,18 @@
     "name": "TexPrüf",
     "longName": "Textilprüfung",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d2cbfa"
   },
   {
     "id": 420,
     "name": "TexVere",
     "longName": "Textilveredlung",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ac9ff4"
   },
   {
     "id": 164,
@@ -3514,15 +3544,17 @@
     "longName": "Theoretische Informatik",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "055365"
+    "foreColor": "000000",
+    "backColor": "8080ff"
   },
   {
     "id": 153,
     "name": "TM 1",
-    "longName": "TM 1",
+    "longName": "Technische Mechanik 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff"
   },
   {
     "id": 163,
@@ -4028,8 +4060,8 @@
     "longName": "Virtuelle Modellierung",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "ff8080"
+    "foreColor": "000000",
+    "backColor": "ff8040"
   },
   {
     "id": 443,
@@ -4088,7 +4120,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 214,
@@ -4114,8 +4146,8 @@
     "longName": "Wirtschaftsstatistik",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "foreColor": "000000",
+    "backColor": "ff8000"
   },
   {
     "id": 93,
@@ -4273,7 +4305,9 @@
     "name": "WST",
     "longName": "Werkstofftechnik",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff"
   },
   {
     "id": 10,
@@ -4319,7 +4353,9 @@
     "name": "FM",
     "longName": "Funktionsmaterialien",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 481,
@@ -4537,7 +4573,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "ff8080"
+    "backColor": "008080"
   },
   {
     "id": 508,
@@ -5016,7 +5052,9 @@
     "name": "Pers+UntF",
     "longName": "Personal- und Unternehmensführung",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c4bb99"
   },
   {
     "id": 563,
@@ -5693,9 +5731,11 @@
   {
     "id": 645,
     "name": "WP 4",
-    "longName": "WP 4",
+    "longName": "Wahlpflichtfach IV Digitales Prozessmanagement",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "808000"
   },
   {
     "id": 646,
@@ -6003,7 +6043,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "d66b29"
+    "backColor": "00ffff"
   },
   {
     "id": 682,
@@ -6582,8 +6622,8 @@
     "longName": "Advanced Statistics",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "800040"
+    "foreColor": "000000",
+    "backColor": "80ff80"
   },
   {
     "id": 748,
@@ -6637,7 +6677,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ff80ff"
+    "backColor": "ffff80"
   },
   {
     "id": 754,
@@ -6660,11 +6700,11 @@
   {
     "id": 756,
     "name": "SigSys1",
-    "longName": "Signale und Systeme I",
+    "longName": "Signale und Systeme 1",
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "ff8000"
   },
   {
     "id": 757,
@@ -6867,11 +6907,11 @@
   {
     "id": 779,
     "name": "SigSys2",
-    "longName": "Signale und Systeme II",
+    "longName": "Signale und Systeme 2",
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 780,
@@ -7545,7 +7585,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "8080c0"
+    "backColor": "9200ff"
   },
   {
     "id": 864,
@@ -7588,7 +7628,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 869,
@@ -7785,7 +7825,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ff8040"
+    "backColor": "ff80ff"
   },
   {
     "id": 892,
@@ -7803,7 +7843,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 894,
@@ -7848,7 +7888,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "00ff00"
+    "backColor": "8080ff"
   },
   {
     "id": 899,
@@ -8279,7 +8319,9 @@
     "name": "St",
     "longName": "Statistik",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d2cbfa"
   },
   {
     "id": 950,
@@ -8340,7 +8382,9 @@
     "name": "W1 MF",
     "longName": "Wahlfach 1 Micro Factory",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c4bb99"
   },
   {
     "id": 957,
@@ -8393,9 +8437,7 @@
     "name": "Netz",
     "longName": "Netzwerke",
     "alternateName": "",
-    "active": true,
-    "foreColor": "ffffff",
-    "backColor": "0080ff"
+    "active": true
   },
   {
     "id": 964,
@@ -8649,11 +8691,11 @@
   {
     "id": 995,
     "name": "WPM_DesCPS",
-    "longName": "WPM_Design Cyber Physical Systems",
+    "longName": "WPM Design Cyber Physical Systems",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
-    "backColor": "d66b29"
+    "foreColor": "ffffff",
+    "backColor": "008080"
   },
   {
     "id": 996,
@@ -8766,11 +8808,9 @@
   {
     "id": 1008,
     "name": "WPM_VirtKonz",
-    "longName": "WPM_Virtualisierung&Virtualisierungskonzepte",
+    "longName": "WPM Virtualisierung und Virtualisierungskonzepte",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "a92ceb"
+    "active": true
   },
   {
     "id": 1009,
@@ -8890,9 +8930,7 @@
     "name": "WebAnw2",
     "longName": "Web Anwendungen 2",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "ffff00"
+    "active": true
   },
   {
     "id": 1023,
@@ -8906,9 +8944,7 @@
     "name": "SoftEng",
     "longName": "Software Engineering",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "ffff00"
+    "active": true
   },
   {
     "id": 1025,
@@ -9051,7 +9087,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "800040"
+    "backColor": "804040"
   },
   {
     "id": 1044,
@@ -9305,14 +9341,16 @@
   {
     "id": 1073,
     "name": "WPM_Blockchain",
-    "longName": "WPM Cryptocurrencies and Blockchain",
+    "longName": "WPM Blockchain Technology and Crypto Currencies",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "804040"
   },
   {
     "id": 1074,
     "name": "WPM_AI",
-    "longName": "WPM Artificial Intelligence",
+    "longName": "WPM Aritficial Intelligence",
     "alternateName": "",
     "active": true
   },
@@ -9487,20 +9525,20 @@
   {
     "id": 1095,
     "name": "WPM_AutoSys",
-    "longName": "WPM_Automotive Systems Engineering",
+    "longName": "WPM Automotive Systems Engineering (AEI)",
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "8080ff"
+    "backColor": "808000"
   },
   {
     "id": 1096,
     "name": "WPM_BA",
-    "longName": "WPM_Business Analytics",
+    "longName": "WPM Business Analytics",
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "bb2103"
+    "backColor": "008080"
   },
   {
     "id": 1097,
@@ -9548,11 +9586,9 @@
   {
     "id": 1102,
     "name": "WPM_CorpFin",
-    "longName": "WPM_Corporate Finance",
+    "longName": "WPM Corporate Finance",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "ff8000"
+    "active": true
   },
   {
     "id": 1103,
@@ -9564,7 +9600,7 @@
   {
     "id": 1104,
     "name": "WPM_InfSecAud",
-    "longName": "WPM_Information Security Audits",
+    "longName": "WPM Information Security Audits",
     "alternateName": "",
     "active": true
   },
@@ -9661,7 +9697,9 @@
     "name": "F+G",
     "longName": "Fasern u. Garne",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "f3f1fe"
   },
   {
     "id": 1116,
@@ -9817,7 +9855,7 @@
   {
     "id": 1133,
     "name": "WPM_ElektSys",
-    "longName": "WPM_Elektronische Systeme im Automobil",
+    "longName": "WPM Elektronische Systeme im Automobil (AEI)",
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
@@ -9993,7 +10031,7 @@
   {
     "id": 1153,
     "name": "WPM_DroneComp",
-    "longName": "WPM_Drone Based Computing",
+    "longName": "WPM Drone Based Computing",
     "alternateName": "",
     "active": true
   },
@@ -10312,21 +10350,27 @@
     "name": "Ph 1",
     "longName": "Physik 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "f3f1fe"
   },
   {
     "id": 1203,
     "name": "Ma 2",
     "longName": "Mathematik 2",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d2cbfa"
   },
   {
     "id": 1208,
     "name": "Ph 2",
-    "longName": "Ph 2",
+    "longName": "Physik 2",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d2cbfa"
   },
   {
     "id": 1213,
@@ -10642,9 +10686,11 @@
   {
     "id": 1378,
     "name": "GK 1",
-    "longName": "Grundlagen der Konstruktion",
+    "longName": "Grundlagen der Konstruktion 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff"
   },
   {
     "id": 1380,
@@ -11638,7 +11684,7 @@
   {
     "id": 1872,
     "name": "WPM_HardKryp",
-    "longName": "WPM Hardware-Kryptographie",
+    "longName": "WPM Hardware Kryptografie",
     "alternateName": "",
     "active": true
   },
@@ -11751,7 +11797,9 @@
     "name": "WA",
     "longName": "Wissenschaftliches Arbeiten",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ac9ff4"
   },
   {
     "id": 1932,
@@ -11948,7 +11996,9 @@
     "name": "P+PMan",
     "longName": "Produkt- und Projektmanagement",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 2028,
@@ -11973,7 +12023,9 @@
     "name": "InAn",
     "longName": "Innovative Anwendungen",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "7863ef"
   },
   {
     "id": 2039,
@@ -12014,7 +12066,7 @@
   {
     "id": 2059,
     "name": "INF-Grdl.",
-    "longName": "Informatik - Grundlagen",
+    "longName": "Informatik-Grundlagen",
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
@@ -12113,9 +12165,11 @@
   {
     "id": 2113,
     "name": "CAD 1",
-    "longName": "CAD 1",
+    "longName": "CAD Labor 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff"
   },
   {
     "id": 2118,
@@ -12489,21 +12543,27 @@
     "name": "E G&St EP",
     "longName": "Environmental Guidelines & Standards, Environmental Policy",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d3ca92"
   },
   {
     "id": 2317,
     "name": "ET",
     "longName": "Environmental Technologies",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d3ca92"
   },
   {
     "id": 2322,
     "name": "Eng1",
-    "longName": "Englisch1",
+    "longName": "Englisch 1",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "d3ca92"
   },
   {
     "id": 2327,
@@ -12539,7 +12599,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "ffffff",
-    "backColor": "800040"
+    "backColor": "8000ff"
   },
   {
     "id": 2342,
@@ -12630,7 +12690,7 @@
   {
     "id": 2388,
     "name": "ITS-Manag",
-    "longName": "IT Security Management and Incident Response",
+    "longName": "IT Security Management",
     "alternateName": "",
     "active": true
   },
@@ -12768,9 +12828,11 @@
   {
     "id": 2450,
     "name": "TE+S",
-    "longName": "Textile Ecology and Sustainabillity",
+    "longName": "Textile Ecology + Sustainability",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ac9ff4"
   },
   {
     "id": 2455,
@@ -12851,7 +12913,7 @@
     "alternateName": "",
     "active": true,
     "foreColor": "000000",
-    "backColor": "ffff00"
+    "backColor": "c0c0c0"
   },
   {
     "id": 2497,
@@ -13348,7 +13410,7 @@
   {
     "id": 2774,
     "name": "DatSchutz",
-    "longName": "Datenschutz und Urheberrecht",
+    "longName": "Datenschutz",
     "alternateName": "",
     "active": true
   },
@@ -13774,7 +13836,9 @@
     "name": "F&ST",
     "longName": "Finish & Surface Technology",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ff00"
   },
   {
     "id": 2994,
@@ -13822,7 +13886,7 @@
   {
     "id": 3019,
     "name": "LCA 2",
-    "longName": "Life Cycle Assessment 2",
+    "longName": "Life Cycle Assesment 2",
     "alternateName": "",
     "active": true
   },
@@ -14079,18 +14143,14 @@
     "name": "GrundBuch",
     "longName": "Grundlagen der Buchführung",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "00ff00"
+    "active": true
   },
   {
     "id": 3167,
     "name": "EinfProzMod",
-    "longName": "Einführung in Prozessmodellierung",
+    "longName": "Einführung in die Prozessmodellierung",
     "alternateName": "",
-    "active": true,
-    "foreColor": "000000",
-    "backColor": "00ff00"
+    "active": true
   },
   {
     "id": 3172,
@@ -14229,7 +14289,9 @@
     "name": "WPM_SocialEng",
     "longName": "WPM Social Engineering",
     "alternateName": "",
-    "active": true
+    "active": true,
+    "foreColor": "0080ff",
+    "backColor": "ffffff"
   },
   {
     "id": 3253,
@@ -14673,7 +14735,7 @@
   {
     "id": 3500,
     "name": "OperManag",
-    "longName": "Operations Management",
+    "longName": "Operations Mangement",
     "alternateName": "",
     "active": true
   },
@@ -14703,10 +14765,10 @@
   {
     "id": 3520,
     "name": "IntSysMasch",
-    "longName": "Intelligente Systeme und Maschinelles Lernen",
+    "longName": "Intelligente Systeme und machinelles Lernen",
     "alternateName": "",
     "active": true,
-    "foreColor": "000000",
+    "foreColor": "4da9ff",
     "backColor": "ffffff"
   },
   {
@@ -15428,8 +15490,8 @@
     "longName": "WPF-DE: (I)Iot - Industrial Internet of Things",
     "alternateName": "",
     "active": true,
-    "foreColor": "ffffff",
-    "backColor": "3d0080"
+    "foreColor": "000000",
+    "backColor": "ffffff"
   },
   {
     "id": 3809,
@@ -16802,5 +16864,236 @@
     "longName": "Füge- und Montagetec",
     "alternateName": "",
     "active": true
+  },
+  {
+    "id": 4316,
+    "name": "WPM_IndustDatScien",
+    "longName": "Industrial Data Science",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4319,
+    "name": "WPB2:Entreprship-Tei",
+    "longName": "Wahlpflichtblock 2: Entrepreneurship - Teil B",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff0080"
+  },
+  {
+    "id": 4322,
+    "name": "WebAnw 2",
+    "longName": "Web Anwendungen 2",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4325,
+    "name": "Pr_WebAnw 2",
+    "longName": "Praktikum Web Anwendungen 2",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4328,
+    "name": "WPB2:DigProd",
+    "longName": "Wahlpflichtblock 2: Digital Production",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff0080"
+  },
+  {
+    "id": 4331,
+    "name": "Stricktechnisches Pr",
+    "longName": "Stricktechnisches Pr",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4334,
+    "name": "MaPhy",
+    "longName": "Mathematical and Physical Concepts and Methods in the Engineering Science",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "9200ff"
+  },
+  {
+    "id": 4337,
+    "name": "RPA and AI-Automatio",
+    "longName": "RPA and AI-Automation (WPF)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "008000"
+  },
+  {
+    "id": 4340,
+    "name": "Artificial Intellige",
+    "longName": "Artificial Intelligence - IAI",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4343,
+    "name": "Global Value Chain M",
+    "longName": "Global Value Chain Management  - IAI",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4346,
+    "name": "Project AI-DE (Rehfe",
+    "longName": "Project - AI and Data Engineering (Rehfeldt: practical project)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4349,
+    "name": "Data Science-Part A ",
+    "longName": "Data Science - Part A (Basics/ IAI)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4352,
+    "name": "Appl. Computer Visio",
+    "longName": "Applied Computer Vision - IAI",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4355,
+    "name": "WPM_IT-SecNN",
+    "longName": "IT Sec Still No Name ;-)",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4358,
+    "name": "WPF_Faserverbundwerk",
+    "longName": "WPF_Faserverbundwerk",
+    "alternateName": "",
+    "active": true
+  },
+  {
+    "id": 4361,
+    "name": "Tut. IoT-Grdl.",
+    "longName": "Tutorium Internet of Things - Grundlagen",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "3bd4ff"
+  },
+  {
+    "id": 4364,
+    "name": "Tut. ADBWL-Teil A",
+    "longName": "Tutorium Allgemeine und Digitale BWL - Teil A",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "3bd4ff"
+  },
+  {
+    "id": 4367,
+    "name": "Tut. ADBWL-Teil B",
+    "longName": "Tutorium Allgemeine und Digitale BWL - Teil B",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "3bd4ff"
+  },
+  {
+    "id": 4370,
+    "name": "German for IAI (A1/ ",
+    "longName": "German for IAI students (A1/ A2)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4373,
+    "name": "Project AI-DE - Intr",
+    "longName": "Project - AI and Data Engineering (theoretical introduction)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4376,
+    "name": "Project AI-DE (Schmi",
+    "longName": "Project - AI and Data Engineering (Schmitt: practical project)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4379,
+    "name": "Python Programming -",
+    "longName": "Python Programming -Fundamentals (IAI)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4382,
+    "name": "Data Science-Part B ",
+    "longName": "Data Science - Part B (DA and Dashboarding/ IAI)",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "c0ffa0"
+  },
+  {
+    "id": 4385,
+    "name": "Innovationsmethode T",
+    "longName": "Innovationsmethode TRIZ",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "ffffff",
+    "backColor": "008080"
+  },
+  {
+    "id": 4388,
+    "name": "Workshop: KI & Mensc",
+    "longName": "Workshop: KI & Mensc",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "aa81f7"
+  },
+  {
+    "id": 4391,
+    "name": "English for studying",
+    "longName": "English for studying",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "8787ff"
+  },
+  {
+    "id": 4394,
+    "name": "WPM_AdvPent",
+    "longName": "Advanced Pentesting",
+    "alternateName": "",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "617fb2"
   }
 ]
