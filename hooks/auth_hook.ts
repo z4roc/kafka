@@ -6,7 +6,8 @@ import {
 } from "firebase/auth";
 import { create } from "zustand";
 import { doc, onSnapshot, type DocumentData } from "firebase/firestore";
-import { schoolType, studyFieldType } from "@/components/onboarding-flow";
+import { schoolType } from "@/components/onboarding-flow";
+import { studyFieldType } from "@/types/types";
 export interface User {
   uid: string;
   email: string | null;

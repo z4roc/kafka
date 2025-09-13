@@ -1,17 +1,17 @@
 import { getUserCourseOfStudy, getUserSubjects } from "@/lib/subjects";
 import { webuntisApi } from "@/lib/webuntis_api";
 import ical from "ical-generator";
-import {
-  convertWebUntisLessons,
-  convertWebUntisToCalendarEvent,
-  WebUntisLesson,
-} from "@/lib/webuntis-utils";
+
+import { NextRequest } from "next/server";
+
+import { convertWebUntisLessons, WebUntisLesson } from "@/lib/webuntis-utils";
 import { studyFieldType } from "@/types/types";
+
 export async function GET(
   request: Request,
-  { params }: { params: { userId: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
-  const { userId } = params;
+  const userId = (await params).slug;
   // Fetch calendar events for the user
   const subjects = await getUserSubjects(userId);
   const userCourseOfStudy = await getUserCourseOfStudy(userId);
