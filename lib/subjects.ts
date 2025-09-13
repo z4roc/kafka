@@ -41,6 +41,20 @@ export const searchSubjects = (query: string): Subject[] => {
   );
 };
 
+export const getUserCourseOfStudy = async (
+  userId: string
+): Promise<string | null> => {
+  // Mock function for Firebase integration (to be replaced with actual Firebase calls)
+  const userRef = doc(db, "users", userId);
+  const userSnap = await getDoc(userRef);
+
+  if (userSnap.exists()) {
+    const userData = userSnap.data();
+    return userData.studyField || null;
+  }
+  return null;
+};
+
 // Mock functions for Firebase integration (to be replaced with actual Firebase calls)
 export const getUserSubjects = async (
   userId: string

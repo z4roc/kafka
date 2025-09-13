@@ -1,7 +1,5 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import { WebUntisAPI } from "@/lib/webuntis_api";
-import { Lesson } from "webuntis";
-import { writeFile } from "fs/promises";
+import { webuntisApi } from "@/lib/webuntis_api";
+import { writeFileSync } from "fs";
 
 type ResponseData = {
   message: string;
@@ -11,19 +9,21 @@ export async function POST(request: Request) {
   try {
     const { subjects } = await request.json();
 
-    const webuntis = new WebUntisAPI();
-    await webuntis.login();
-    const lessons = await webuntis.getTimeTableByClasses(
-      subjects,
-      "Technische Informatik"
+    const allLessons = await webuntisApi.getAllLessonsForSchoolYear(
+      await webuntisApi.getSchoolYearByName("2025/2026")
     );
-    await webuntis.logout();
 
-    await writeFile("./lessons.json", JSON.stringify(lessons, null, 2), {
-      encoding: "utf-8",
-    });
+    const lessons = allLessons.filter((lesson) =>
+      subjects.some(
+        (subject: { id: number }) => subject.id === lesson.su[0]?.id
+      )
+    );
 
-    return new Response(JSON.stringify(lessons), {
+    const uniqueLessons = Array.from(
+      new Map(lessons.map((lesson) => [lesson.id, lesson])).values()
+    );
+
+    return new Response(JSON.stringify(uniqueLessons), {
       status: 200,
       headers: {
         "Content-Type": "application/json",

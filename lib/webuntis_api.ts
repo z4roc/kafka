@@ -32,9 +32,6 @@ export class WebUntisAPI {
     server: string = default_settings.server
   ) {
     this.webuntis = new WebUntis(school, username, password, server);
-    console.log(
-      `WebUntisAPI initialized with school: ${school}, username: ${username}, server: ${server}`
-    );
   }
 
   // login für WebUntis
@@ -66,7 +63,7 @@ export class WebUntisAPI {
   }
 
   async getSchoolYears() {
-    return await this.webuntis.getSchoolyears();
+    return await this.webuntis.getSchoolyears(true);
   }
 
   async getSchoolYearByName(name: string) {
@@ -87,6 +84,10 @@ export class WebUntisAPI {
       this.validateSession,
       this.currentSchoolyear!.id
     );
+  }
+
+  async getTeachers() {
+    return await this.webuntis.getTeachers(this.validateSession);
   }
 
   async getSubjects() {
@@ -118,11 +119,6 @@ export class WebUntisAPI {
 
     // Use the school year's date range instead of arbitrary 3 months
     // Returns LESSONS, su: subject: ro: room, te: teacher, cl: class
-    console.log(
-      `Fetching timetable for ${
-        year.name
-      } from ${startDate.toISOString()} to ${endDate.toISOString()}`
-    );
     return await this.webuntis.getTimetableForRange(
       startDate,
       endDate,
@@ -140,9 +136,16 @@ export class WebUntisAPI {
     studyField: studyFieldType
   ) {
     this.currentSchoolyear = await this.getSchoolYearByName("2025/2026");
+
+    if (studyField === "Other") {
+      return [];
+    }
+
     const classList = await this.getClasses();
     const class_key = FieldMap[studyField]; // "TI", "WI", "ITS"
-
+    if (!class_key) {
+      throw new Error(`Invalid study field: ${studyField}`);
+    }
     const filteredClasses = classList.filter((c) =>
       c.name.startsWith(class_key)
     );
@@ -164,11 +167,31 @@ export class WebUntisAPI {
       uncompleted_subjects.some((us) => us.id === entry.su[0]?.id)
     );
 
-    console.log(
-      `Fetched ${timetableEntries.length} timetable entries for enrolled subjects.`
+    return filteredTimetable;
+  }
+
+  async getAllLessonsForSchoolYear(year: SchoolYear = this.currentSchoolyear!) {
+    if (!year) {
+      year = await this.getCurrentSchoolYear();
+    }
+
+    this.setCurrentSchoolyear(year);
+
+    const classList = await this.getClasses();
+
+    // For now Only TI-*, ITS-*, WIN-*
+    const filteredClasses = classList.filter((c) =>
+      ["TI", "ITS", "WIN"].some((prefix) => c.name.startsWith(prefix))
     );
 
-    return filteredTimetable;
+    let timetableEntries: Lesson[] = [];
+
+    for (const classId of filteredClasses.map((c) => c.id)) {
+      const entries = await this.getTimetableForClass(classId);
+      timetableEntries = timetableEntries.concat(entries);
+    }
+
+    return timetableEntries;
   }
 }
 

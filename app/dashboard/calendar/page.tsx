@@ -40,6 +40,7 @@ export default function CalendarPage() {
           return response.json();
         })
         .then((data) => {
+          console.log("Raw lessons data:", data);
           const events = convertWebUntisLessons(data);
 
           // Group consecutive lessons of the same subject
