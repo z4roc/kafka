@@ -37,7 +37,9 @@ export class WebUntisAPI {
   // login für WebUntis
   async login() {
     try {
-      await this.webuntis.login();
+      if (!(await this.webuntis.validateSession())) {
+        await this.webuntis.login();
+      }
     } catch (error) {
       console.error("Login failed:", error);
     }

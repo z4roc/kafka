@@ -4,25 +4,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Calendar,
-  Grid3X3,
-  FolderSync,
-  RefreshCcw,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, Calendar, Grid3X3 } from "lucide-react";
 import { WeekView } from "@/components/week-view";
 import { MonthView } from "@/components/month-view";
 import type { CalendarEvent } from "@/lib/webuntis-utils";
-import { useAuthStore } from "@/hooks/auth_hook";
-import {
-  Dialog,
-  DialogClose,
-  DialogFooter,
-  DialogHeader,
-  DialogTrigger,
-} from "./ui/dialog";
 import { ICSLinkDialog } from "./ics-link-dialog";
 
 interface CalendarViewProps {

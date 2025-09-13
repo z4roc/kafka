@@ -11,7 +11,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { useEffect, useState } from "react";
-import { Lesson } from "webuntis";
 import {
   CalendarEvent,
   convertWebUntisLessons,
@@ -23,10 +22,11 @@ import { useAuthStore } from "@/hooks/auth_hook";
 export default function CalendarPage() {
   const [lessons, setLessons] = useState<CalendarEvent[] | null>([]);
   const { user } = useAuthStore();
+
   useEffect(() => {
     if (!user?.uid) return;
     // Fetch classes from WebUntis API
-    getUserSubjects(user.uid).then((subjects) => {
+    getUserSubjects(user?.uid).then((subjects) => {
       fetch("/api/webuntis", {
         method: "POST",
         headers: {
