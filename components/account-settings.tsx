@@ -127,7 +127,6 @@ export function AccountSettings() {
       return;
     }
 
-    console.log("Uploading avatar:", file.name);
     setIsUploadingAvatar(true);
     setMessage(null);
 
@@ -135,7 +134,6 @@ export function AccountSettings() {
       const storageRef = ref(storage, `avatars/${user.uid}/${file.name}`);
       const snapshot = await uploadBytes(storageRef, file);
       const downloadURL = await getDownloadURL(snapshot.ref);
-      console.log("Avatar uploaded successfully:", downloadURL);
       // Update in Firestore
       await updateDoc(doc(db, "users", user.uid), {
         avatarUrl: downloadURL,

@@ -18,13 +18,14 @@ import {
   groupConsecutiveLessons,
 } from "@/lib/webuntis-utils";
 import { getUserSubjects } from "@/lib/subjects";
+import { useAuthStore } from "@/hooks/auth_hook";
 
 export default function CalendarPage() {
   const [lessons, setLessons] = useState<CalendarEvent[] | null>([]);
+  const { user } = useAuthStore();
   useEffect(() => {
     // Fetch classes from WebUntis API
-    getUserSubjects().then((subjects) => {
-      console.log("User subjects:", subjects);
+    getUserSubjects(user!.uid).then((subjects) => {
       fetch("/api/webuntis", {
         method: "POST",
         headers: {
@@ -39,7 +40,7 @@ export default function CalendarPage() {
           return response.json();
         })
         .then((data) => {
-          console.log("Fetched lessons:", data);
+          console.log("Raw lessons data:", data);
           const events = convertWebUntisLessons(data);
 
           // Group consecutive lessons of the same subject

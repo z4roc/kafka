@@ -107,7 +107,7 @@ export function convertWebUntisToCalendarEvent(
     lesson.su[0]?.longname || lesson.su[0]?.name || "Unknown Subject";
   const teacher =
     lesson.te[0]?.longname || lesson.te[0]?.name || "Unknown Teacher";
-  const room = lesson.ro[0]?.longname || lesson.ro[0]?.name || "Unknown Room";
+  const room = lesson.ro[0]?.name || lesson.ro[0]?.longname || "Unknown Room";
   const classes = lesson.kl.map((kl) => kl.name);
 
   return {

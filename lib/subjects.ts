@@ -8,10 +8,10 @@ import {
   setDoc,
   updateDoc,
   writeBatch,
+  deleteDoc,
 } from "firebase/firestore";
 import subjectsData from "@/data/subjects.json";
 import { webuntisApi } from "./webuntis_api";
-import { write } from "fs";
 
 export const getAllSubjects = (): Subject[] => {
   return subjectsData.filter((subject) => subject.active);
@@ -41,48 +41,82 @@ export const searchSubjects = (query: string): Subject[] => {
   );
 };
 
-// Mock functions for Firebase integration (to be replaced with actual Firebase calls)
-export const getUserSubjects = async (): Promise<UserSubject[]> => {
-  // This would normally fetch from Firestore
-  const stored = localStorage.getItem("userSubjects");
-  if (stored) {
-    const subjects = JSON.parse(stored);
-    return subjects.map((s: any) => ({
-      ...s,
-      enrolledAt: new Date(s.enrolledAt),
-    }));
+export const getUserCourseOfStudy = async (
+  userId: string
+): Promise<string | null> => {
+  // Mock function for Firebase integration (to be replaced with actual Firebase calls)
+  const userRef = doc(db, "users", userId);
+  const userSnap = await getDoc(userRef);
+
+  if (userSnap.exists()) {
+    const userData = userSnap.data();
+    return userData.studyField || null;
   }
-  return [];
+  return null;
 };
 
-export const addUserSubject = async (subject: Subject): Promise<void> => {
+// Mock functions for Firebase integration (to be replaced with actual Firebase calls)
+export const getUserSubjects = async (
+  userId: string
+): Promise<UserSubject[]> => {
+  // This would normally fetch from Firestore
+  const userSubjectRef = collection(db, "users", userId, "subjects");
+  const snapshot = await getDocs(userSubjectRef);
+  return snapshot.docs.map((doc) => {
+    const data = doc.data();
+    return {
+      ...data,
+      enrolledAt: data.enrolledAt?.toDate
+        ? data.enrolledAt.toDate()
+        : new Date(data.enrolledAt),
+    } as UserSubject;
+  });
+};
+
+export const addUserSubject = async (
+  subject: Subject,
+  userId: string
+): Promise<void> => {
   // This would normally save to Firestore
-  const userSubjects = await getUserSubjects();
+  const userSubjectRef = doc(
+    collection(db, "users", userId, "subjects"),
+    subject.id.toString()
+  );
   const newUserSubject: UserSubject = {
     ...subject,
     enrolledAt: new Date(),
     completed: false,
   };
-
-  const updated = [...userSubjects, newUserSubject];
-  localStorage.setItem("userSubjects", JSON.stringify(updated));
+  await setDoc(userSubjectRef, {
+    ...newUserSubject,
+    enrolledAt: newUserSubject.enrolledAt, // Firestore will store as Timestamp
+  });
 };
 
-export const removeUserSubject = async (subjectId: number): Promise<void> => {
+export const removeUserSubject = async (
+  subjectId: number,
+  userId: string
+): Promise<void> => {
   // This would normally remove from Firestore
-  const userSubjects = await getUserSubjects();
-  const updated = userSubjects.filter((s) => s.id !== subjectId);
-  localStorage.setItem("userSubjects", JSON.stringify(updated));
+  const userSubjectRef = doc(
+    collection(db, "users", userId, "subjects"),
+    subjectId.toString()
+  );
+  await deleteDoc(userSubjectRef);
 };
 
 export const updateSubjectGrade = async (
   subjectId: number,
+  userId: string,
   grade: number
 ): Promise<void> => {
   // This would normally update in Firestore
-  const userSubjects = await getUserSubjects();
-  const updated = userSubjects.map((s) =>
-    s.id === subjectId ? { ...s, grade, completed: true } : s
+  const userSubjectRef = doc(
+    collection(db, "users", userId, "subjects"),
+    subjectId.toString()
   );
-  localStorage.setItem("userSubjects", JSON.stringify(updated));
+  await updateDoc(userSubjectRef, {
+    grade,
+    completed: true,
+  });
 };

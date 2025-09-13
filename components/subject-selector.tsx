@@ -16,6 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useAuthStore } from "@/hooks/auth_hook";
 
 interface SubjectSelectorProps {
   onSubjectAdded: () => void;
@@ -31,6 +32,8 @@ export function SubjectSelector({
   const [subjects, setSubjects] = useState<Subject[]>([]);
   const [filteredSubjects, setFilteredSubjects] = useState<Subject[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+
+  const { user } = useAuthStore();
 
   useEffect(() => {
     const allSubjects = getAllSubjects();
@@ -50,7 +53,7 @@ export function SubjectSelector({
   const handleAddSubject = async (subject: Subject) => {
     setIsLoading(true);
     try {
-      await addUserSubject(subject);
+      await addUserSubject(subject, user!.uid);
       onSubjectAdded();
       setIsOpen(false);
       setSearchQuery("");

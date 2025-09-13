@@ -13,6 +13,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GradeEntry } from "@/components/grade-entry";
 import { Trash2, Calendar, Award } from "lucide-react";
+import { useAuthStore } from "@/hooks/auth_hook";
 
 interface ClassesListProps {
   subjects: UserSubject[];
@@ -20,10 +21,12 @@ interface ClassesListProps {
 }
 
 export function ClassesList({ subjects, onSubjectsChanged }: ClassesListProps) {
+  const { user } = useAuthStore();
+
   const handleRemoveSubject = async (subjectId: number) => {
     if (confirm("Are you sure you want to remove this subject?")) {
       try {
-        await removeUserSubject(subjectId);
+        await removeUserSubject(subjectId, user?.uid || "");
         onSubjectsChanged();
       } catch (error) {
         console.error("Failed to remove subject:", error);
