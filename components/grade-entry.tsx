@@ -17,6 +17,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { GraduationCap, Edit } from "lucide-react";
+import { useAuthStore } from "@/hooks/auth_hook";
 
 interface GradeEntryProps {
   subject: UserSubject;
@@ -27,6 +28,8 @@ export function GradeEntry({ subject, onGradeUpdated }: GradeEntryProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [grade, setGrade] = useState(subject.grade?.toString() || "");
   const [isLoading, setIsLoading] = useState(false);
+
+  const { user } = useAuthStore();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,7 +42,7 @@ export function GradeEntry({ subject, onGradeUpdated }: GradeEntryProps) {
 
     setIsLoading(true);
     try {
-      await updateSubjectGrade(subject.id, gradeValue);
+      await updateSubjectGrade(subject.id, user?.uid || "", gradeValue);
       onGradeUpdated();
       setIsOpen(false);
     } catch (error) {
