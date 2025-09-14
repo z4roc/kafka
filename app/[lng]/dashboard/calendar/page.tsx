@@ -24,8 +24,11 @@ export default function CalendarPage() {
   const [lessons, setLessons] = useState<CalendarEvent[] | null>([]);
   const { user } = useAuthStore();
   useEffect(() => {
+    if (!user?.uid) return;
+
+    document.title = `${user?.displayName || "User"} | Kalender - Kafka`;
     // Fetch classes from WebUntis API
-    getUserSubjects(user!.uid).then((subjects) => {
+    getUserSubjects(user.uid).then((subjects) => {
       fetch("/api/webuntis", {
         method: "POST",
         headers: {
@@ -40,7 +43,6 @@ export default function CalendarPage() {
           return response.json();
         })
         .then((data) => {
-          console.log("Raw lessons data:", data);
           const events = convertWebUntisLessons(data);
 
           // Group consecutive lessons of the same subject
@@ -52,7 +54,7 @@ export default function CalendarPage() {
           // Fallback to mock data if API fails
         });
     });
-  }, []);
+  }, [user?.uid]);
 
   return (
     <>

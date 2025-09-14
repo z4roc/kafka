@@ -9,6 +9,7 @@ import {
   LogOut,
   Calendar1,
   LogOutIcon,
+  Home,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 
@@ -39,6 +40,11 @@ import { useAuthStore } from "@/hooks/auth_hook";
 // Mock user data - replace with actual user data from Firebase
 
 const navigationItems = [
+  {
+    title: "Dashboard",
+    url: "/dashboard",
+    icon: Home,
+  },
   {
     title: "Account",
     url: "/dashboard/account",

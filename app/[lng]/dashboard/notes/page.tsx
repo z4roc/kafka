@@ -1,6 +1,3 @@
-"use client";
-import { SidebarTrigger } from "@/components/ui/sidebar";
-import { Separator } from "@/components/ui/separator";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -9,18 +6,11 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import Classes from "@/components/classes";
-import { useAuthStore } from "@/hooks/auth_hook";
-import { useEffect } from "react";
+import { Separator } from "@/components/ui/separator";
+import { SidebarTrigger } from "@/components/ui/sidebar";
+import Image from "next/image";
 
-export default function ClassesPage() {
-  const { user, loading } = useAuthStore();
-  useEffect(() => {
-    // Ändere den Seitentitel direkt im Browser
-    if (!user && loading) return;
-    document.title = `${user?.displayName || "User"} | Fächer - Kafka`;
-  }, [user?.displayName]);
-
+export default function NotesPage() {
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -34,7 +24,7 @@ export default function ClassesPage() {
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Calendar</BreadcrumbPage>
+                <BreadcrumbPage>Notes</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
@@ -42,7 +32,14 @@ export default function ClassesPage() {
       </header>
 
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
-        <Classes />
+        <p>Notes Page - Coming Soon!</p>
+        <Image
+          src="/kurukuru.gif"
+          alt="Loading..."
+          width={300}
+          height={200}
+          style={{ marginTop: "20px" }}
+        />
       </div>
     </>
   );
