@@ -44,6 +44,8 @@ import {
   SelectValue,
 } from "./ui/select";
 import { schools } from "./onboarding-flow";
+import { toast } from "sonner";
+import { studyFields } from "@/types/types";
 
 export function AccountSettings() {
   const { user, loading, setUser } = useAuthStore();
@@ -100,13 +102,14 @@ export function AccountSettings() {
 
       // Update Firestore
       await updateDoc(doc(db, "users", user.uid), updatedData);
-
+      toast.success("Account settings updated successfully!");
       setMessage({
         type: "success",
         text: "Account settings updated successfully!",
       });
     } catch (error) {
       console.error("Error updating user data:", error);
+      toast.error("Failed to update account settings");
       setMessage({ type: "error", text: "Failed to update account settings" });
     } finally {
       setSaving(false);
@@ -327,19 +330,29 @@ export function AccountSettings() {
                 </SelectContent>
               </Select>
             </div>
-
             <div className="space-y-2">
               <label htmlFor="studyField" className="text-sm font-medium">
                 Field of Study
               </label>
-              <Input
-                id="studyField"
-                value={formData.studyField}
-                onChange={(e) =>
-                  handleInputChange("studyField", e.target.value)
+              <Select
+                onValueChange={(value) =>
+                  handleInputChange("studyField", value)
                 }
-                placeholder="Enter your field of study"
-              />
+              >
+                <SelectTrigger className="h-12">
+                  <SelectValue
+                    defaultValue={formData.studyField}
+                    placeholder={formData.studyField}
+                  />
+                </SelectTrigger>
+                <SelectContent>
+                  {studyFields.map((field) => (
+                    <SelectItem key={field} value={field}>
+                      {field}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
           </div>
 

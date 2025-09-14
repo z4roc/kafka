@@ -1,5 +1,4 @@
 "use client";
-import { CalendarView } from "@/components/calendar-view";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
 import {
@@ -10,16 +9,18 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { useEffect, useState } from "react";
-import { Lesson } from "webuntis";
-import {
-  CalendarEvent,
-  convertWebUntisLessons,
-  groupConsecutiveLessons,
-} from "@/lib/webuntis-utils";
 import Classes from "@/components/classes";
+import { useAuthStore } from "@/hooks/auth_hook";
+import { useEffect } from "react";
 
 export default function ClassesPage() {
+  const { user, loading } = useAuthStore();
+  useEffect(() => {
+    // Ändere den Seitentitel direkt im Browser
+    if (!user && loading) return;
+    document.title = `${user?.displayName || "User"} | Fächer - Kafka`;
+  }, [user?.displayName]);
+
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">

@@ -25,6 +25,8 @@ export default function CalendarPage() {
   const { user } = useAuthStore();
   useEffect(() => {
     if (!user?.uid) return;
+
+    document.title = `${user?.displayName || "User"} | Kalender - Kafka`;
     // Fetch classes from WebUntis API
     getUserSubjects(user.uid).then((subjects) => {
       fetch("/api/webuntis", {

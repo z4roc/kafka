@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "next-i18next";
 
 import {
@@ -135,6 +135,12 @@ export default function DashboardPage() {
 
   const { user, loading, setUser } = useAuthStore();
 
+  useEffect(() => {
+    // Ändere den Seitentitel direkt im Browser
+    if (!user && loading) return;
+    document.title = `${user?.displayName || "User"} | Dashboard - Kafka`;
+  }, [user?.displayName]);
+
   return (
     <>
       <header className="flex h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
@@ -160,9 +166,12 @@ export default function DashboardPage() {
           {/* Welcome Card */}
           <Card className="md:col-span-3">
             <CardHeader>
-              <CardTitle className="text-2xl">{t("welcome", { name : user?.displayName || "User" })}</CardTitle>
+              <CardTitle className="text-2xl">
+                {t("welcome", { name: user?.displayName || "User" })}
+              </CardTitle>
               <CardDescription>
-                {t("news")}<Today/>
+                {t("news")}
+                <Today />
               </CardDescription>
             </CardHeader>
           </Card>
