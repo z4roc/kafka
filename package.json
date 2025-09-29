@@ -1,5 +1,5 @@
 {
-  "name": "yourical_enchanced",
+  "name": "kafka",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "firebase": "^11.10.0",
     "i18next": "^25.5.2",
     "ical-generator": "^9.0.0",
+    "ics": "^3.8.1",
     "lucide-react": "^0.525.0",
     "next": "latest",
     "next-i18next": "^15.4.2",

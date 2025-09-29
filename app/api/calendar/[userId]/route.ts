@@ -24,7 +24,7 @@ export async function GET(
 
   const parsedEvents = convertWebUntisLessons(events as WebUntisLesson[]);
 
-  const calendar = ical({ name: "User Calendar" });
+  const calendar = ical({ name: "User Calendar", timezone: "Europe/Berlin" });
 
   parsedEvents.forEach((event) => {
     calendar.createEvent({
