@@ -1,0 +1,50 @@
+{
+  "example_course_with_details": {
+    "obj_id": "150188",
+    "title": "il_crs_member_119558",
+    "description": "Member of course obj_no.150188",
+    "role_type": "member",
+    "details": {
+      "courseXML": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Course><Title>Einführung in die Informatik</Title><Description>Grundlagen der Informatik für Erstsemester</Description><Status>active</Status><Start>2024-10-01</Start><End>2025-02-28</End><Members>45</Members></Course>",
+      "source": "getCourseXML",
+      "parsedInfo": {
+        "title": "Einführung in die Informatik",
+        "description": "Grundlagen der Informatik für Erstsemester", 
+        "status": "active",
+        "startDate": "2024-10-01",
+        "endDate": "2025-02-28"
+      }
+    }
+  },
+  "available_information_types": {
+    "basic_from_roles": [
+      "obj_id - Eindeutige Kurs-ID",
+      "title - Rollenname (z.B. il_crs_member_119558)",
+      "description - Rollenbeschreibung",
+      "role_type - Deine Rolle (member/admin/tutor)"
+    ],
+    "detailed_from_courseXML": [
+      "title - Echter Kursname",
+      "description - Kursbeschreibung", 
+      "status - Kursstatus (aktiv/inaktiv)",
+      "startDate - Kursbeginn",
+      "endDate - Kursende",
+      "members - Anzahl Teilnehmer",
+      "owner - Kursbesitzer",
+      "language - Kurssprache"
+    ],
+    "detailed_from_objectInfo": [
+      "ref_id - Referenz-ID",
+      "type - Objekttyp (crs = Kurs)",
+      "title - Objekttitel",
+      "description - Objektbeschreibung",
+      "create_date - Erstellungsdatum",
+      "last_update - Letzte Aktualisierung"
+    ]
+  },
+  "usage_examples": {
+    "basic_courses": "getCoursesFromRoles(sid, userId, false)",
+    "detailed_courses": "getCoursesFromRoles(sid, userId, true)", 
+    "single_course_details": "getCourseDetails(sid, courseId)"
+  }
+}

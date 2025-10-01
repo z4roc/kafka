@@ -1,0 +1,997 @@
+[
+  {
+    "id": 1,
+    "name": "201-005",
+    "longName": "Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ffffff",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 2,
+    "name": "201-006",
+    "longName": "Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ffffff",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 3,
+    "name": "201-007",
+    "longName": "Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ffffff",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 15,
+    "name": "201-014",
+    "longName": "WIW PC-Pool T 014",
+    "active": true,
+    "did": 3,
+    "building": "201"
+  },
+  {
+    "id": 14,
+    "name": "201-017",
+    "longName": "WIW Vorlesungsraum T 017",
+    "active": true,
+    "did": 3,
+    "building": "201"
+  },
+  {
+    "id": 4,
+    "name": "201-018",
+    "longName": "Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ffffff",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 16,
+    "name": "201-019",
+    "longName": "WIW Produktionslabor T 019",
+    "active": true,
+    "did": 3,
+    "building": "201"
+  },
+  {
+    "id": 20,
+    "name": "201-020",
+    "longName": "WIW Chemielabor T 020",
+    "active": true,
+    "did": 3,
+    "building": "201"
+  },
+  {
+    "id": 79,
+    "name": "201-021",
+    "longName": "Projektraum T-Gebäude 021",
+    "active": true,
+    "did": 3,
+    "building": ""
+  },
+  {
+    "id": 80,
+    "name": "201-022",
+    "longName": "Projektraum T-Gebäude 022",
+    "active": true,
+    "did": 3,
+    "building": ""
+  },
+  {
+    "id": 28,
+    "name": "201-102",
+    "longName": "PC-Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 29,
+    "name": "201-103",
+    "longName": "Seminarraum",
+    "active": true,
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 30,
+    "name": "201-109",
+    "longName": "Seminarraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 31,
+    "name": "201-114",
+    "longName": "PC-Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 5,
+    "name": "201-116",
+    "longName": "PC-Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "201"
+  },
+  {
+    "id": 210,
+    "name": "205-002",
+    "longName": "Stricklabor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 57,
+    "name": "205-003",
+    "longName": "M1-Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 129,
+    "name": "205-004",
+    "longName": "IFT-Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": ""
+  },
+  {
+    "id": 55,
+    "name": "205-004a",
+    "longName": "IFT-Labor a",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 56,
+    "name": "205-004H",
+    "longName": "Handflachstrick-Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 87,
+    "name": "205-017",
+    "longName": "Vorlesungsraum 017",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff80",
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 88,
+    "name": "205-018",
+    "longName": "Vorlesungsraum 018",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 86,
+    "name": "205-019",
+    "longName": "Besprechungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff80ff",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 144,
+    "name": "205-103",
+    "longName": "Projektraum 103",
+    "active": true,
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 37,
+    "name": "205-106",
+    "longName": "Konstruktion 106",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff80",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 74,
+    "name": "205-123",
+    "longName": "Digital-Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 173,
+    "name": "205-124",
+    "longName": "Projektraum 124",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 4,
+    "building": "205"
+  },
+  {
+    "id": 180,
+    "name": "205-125",
+    "longName": "Projektraum 125",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff00",
+    "did": 4,
+    "building": "205"
+  },
+  {
+    "id": 38,
+    "name": "205-130",
+    "longName": "Textilprüflabor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ffa0a0",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 39,
+    "name": "205-133",
+    "longName": "PC-Pool 2",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "408080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 90,
+    "name": "205-135",
+    "longName": "Vorlesungsraum 135",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 91,
+    "name": "205-136",
+    "longName": "Vorlesungsraum 136",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff80",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 92,
+    "name": "205-137",
+    "longName": "Vorlesungsraum 137",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff80",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 93,
+    "name": "205-141",
+    "longName": "Vorlesungsraum 141",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "01ff04",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 89,
+    "name": "205-142",
+    "longName": "Vorlesungsraum 142",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ff80",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 47,
+    "name": "205-302",
+    "longName": "Besprechungsraum",
+    "active": true,
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 42,
+    "name": "205-305",
+    "longName": "altes Labor Rechnertechnik",
+    "active": true,
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 83,
+    "name": "205-306",
+    "longName": "Labor",
+    "active": true,
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 52,
+    "name": "205-319",
+    "longName": "Besprechungsraum",
+    "active": true,
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 239,
+    "name": "205-320",
+    "longName": "Lager",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 242,
+    "name": "205-324",
+    "longName": "KI Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 245,
+    "name": "205-325",
+    "longName": "IT-Sec Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 248,
+    "name": "205-326",
+    "longName": "PC-Pool",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 251,
+    "name": "205-333",
+    "longName": "InfTech Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 254,
+    "name": "205-334",
+    "longName": "Programmentw Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 257,
+    "name": "205-336",
+    "longName": "InternetTech Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 260,
+    "name": "205-337",
+    "longName": "HW Sicherheit Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 263,
+    "name": "205-338",
+    "longName": "Echtzeitsyst Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 175,
+    "name": "205-343",
+    "longName": "Virtual Lab",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 61,
+    "name": "205-346",
+    "longName": "Lernfabrik",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 53,
+    "name": "205-349",
+    "longName": "Labor Rechnertechnik",
+    "active": true,
+    "did": 1,
+    "building": "205"
+  },
+  {
+    "id": 85,
+    "name": "205-Fo",
+    "longName": "TEX-Foyer",
+    "active": true,
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 224,
+    "name": "205-FoN",
+    "longName": "TEX-Foyer-Nord",
+    "active": true,
+    "building": ""
+  },
+  {
+    "id": 219,
+    "name": "205-FoW",
+    "longName": "TEX-Foyer-West",
+    "active": true,
+    "did": 2,
+    "building": ""
+  },
+  {
+    "id": 139,
+    "name": "205-Olymp",
+    "longName": "PC-Pool 1",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "408080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 40,
+    "name": "205-texhub",
+    "longName": "PC-Pool 3",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "408080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 54,
+    "name": "205-TL",
+    "longName": "Textil-Labore",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 2,
+    "building": "205"
+  },
+  {
+    "id": 58,
+    "name": "206-004",
+    "longName": "Tiefenhörsaal",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "building": "206"
+  },
+  {
+    "id": 149,
+    "name": "206-044",
+    "longName": "MAB FVK Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 154,
+    "name": "206-046",
+    "longName": "MAB Metallographie Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 159,
+    "name": "206-047",
+    "longName": "MAB Pulvermetallurgie Labor und Laser",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 164,
+    "name": "206-048",
+    "longName": "MAB Multifunktionslabor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "00ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 45,
+    "name": "206-049",
+    "longName": "MAB Werkstoffhalle",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 26,
+    "name": "206-050",
+    "longName": "MAB Fertigungshalle",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 24,
+    "name": "206-203",
+    "longName": "MAB Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 75,
+    "name": "206-206",
+    "longName": "MAB Labor",
+    "active": true,
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 27,
+    "name": "206-211",
+    "longName": "MAB Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 73,
+    "name": "206-221",
+    "longName": "MAB PC Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 84,
+    "name": "206-224",
+    "longName": "MAB PC Pool zur Freiarbeit",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 72,
+    "name": "206-230",
+    "longName": "MAB PC Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 70,
+    "name": "206-231",
+    "longName": "MAB Vorlesung/Tutorien",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 71,
+    "name": "206-232",
+    "longName": "MAB VR Labor",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 25,
+    "name": "206-301",
+    "longName": "MAB Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 22,
+    "name": "206-303",
+    "longName": "MAB Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 21,
+    "name": "206-304",
+    "longName": "MAB Vorlesungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 32,
+    "name": "206-305",
+    "longName": "MAB Büro",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 23,
+    "name": "206-311",
+    "longName": "MAB Vorlesugsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "80ffff",
+    "did": 4,
+    "building": "206"
+  },
+  {
+    "id": 6,
+    "name": "207-006",
+    "longName": "WIW Vorlesungsraum W 006",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 11,
+    "name": "207-201",
+    "longName": "WIW PC-Pool W 201",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 12,
+    "name": "207-202",
+    "longName": "WIW PC-Pool W 202",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 10,
+    "name": "207-204",
+    "longName": "WIW PC-Pool W 204",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 18,
+    "name": "207-207",
+    "longName": "WIW Projektraum W 207",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 7,
+    "name": "207-301",
+    "longName": "WIW Vorlesungsraum W 301",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 8,
+    "name": "207-302",
+    "longName": "WIW Vorlesungsraum W 302",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 9,
+    "name": "207-303",
+    "longName": "WIW  Vorlesungsraum W 303",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 19,
+    "name": "207-305",
+    "longName": "WIW Projektraum W 305",
+    "active": true,
+    "did": 3,
+    "building": "207"
+  },
+  {
+    "id": 13,
+    "name": "209-111",
+    "longName": "WIW Projektraum C 111",
+    "active": true,
+    "did": 3,
+    "building": "209"
+  },
+  {
+    "id": 17,
+    "name": "209-112",
+    "longName": "WIW Projektraum C 112",
+    "active": true,
+    "did": 3,
+    "building": "209"
+  },
+  {
+    "id": 96,
+    "name": "210-002",
+    "longName": "PC-Pool",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 95,
+    "name": "210-003",
+    "longName": "Labor Informationstechnik",
+    "active": true,
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 94,
+    "name": "210-010",
+    "longName": "Labor Programmentwicklung",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 97,
+    "name": "210-101",
+    "longName": "210-101",
+    "active": true,
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 99,
+    "name": "210-102",
+    "longName": "IT-Security/Netzwerke",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff8080",
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 98,
+    "name": "210-103",
+    "longName": "Besprechungsraum",
+    "active": true,
+    "foreColor": "000000",
+    "backColor": "ff80ff",
+    "did": 1,
+    "building": "210"
+  },
+  {
+    "id": 266,
+    "name": "305-349",
+    "longName": "RechnerTech Labor",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 234,
+    "name": "Hinweis_1",
+    "longName": "Hinweis_1",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 104,
+    "name": "hybrid",
+    "longName": "hybrid",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 112,
+    "name": "HYBRID",
+    "longName": "HYBRID",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 117,
+    "name": "Hybrid",
+    "longName": "Hybrid",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 200,
+    "name": "MS Teams online",
+    "longName": "MS Teams online",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 205,
+    "name": "MS TEAMS ONLINE",
+    "longName": "MS TEAMS ONLINE",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 100,
+    "name": "online",
+    "longName": "online",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 109,
+    "name": "ONLINE",
+    "longName": "ONLINE",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 111,
+    "name": "Online",
+    "longName": "Online",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 125,
+    "name": "online (MS-Teams)",
+    "longName": "online (MS-Teams)",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 169,
+    "name": "online2",
+    "longName": "online2",
+    "active": true,
+    "did": 1,
+    "building": ""
+  },
+  {
+    "id": 185,
+    "name": "online MS Teams",
+    "longName": "online MS Teams",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 190,
+    "name": "ONLINE MS TEAMS",
+    "longName": "ONLINE MS TEAMS",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 195,
+    "name": "Online MS TEAMS",
+    "longName": "Online MS TEAMS",
+    "active": true,
+    "did": 4,
+    "building": ""
+  },
+  {
+    "id": 236,
+    "name": "PlanB",
+    "longName": "PlanB",
+    "active": true,
+    "building": ""
+  },
+  {
+    "id": 230,
+    "name": "SIG",
+    "longName": "SIG",
+    "active": true,
+    "did": 2,
+    "building": ""
+  }
+]

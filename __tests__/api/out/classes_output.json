@@ -231,23 +231,9 @@
     "did": 3
   },
   {
-    "id": 5480,
-    "name": "DEC_2 (SoSe)",
-    "longName": "2. Semester Master Data Engineering and Consulting (= Sommersemester)",
-    "active": true,
-    "did": 3
-  },
-  {
     "id": 5483,
     "name": "DPM_1 (WiSe)",
     "longName": "1. Semester Master WIW-Digital Production Management (= Wintersemester)",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5486,
-    "name": "DPM_2 (SoSe)",
-    "longName": "2. Semester Master WIW-Digital Production Management (= Sommersemester)",
     "active": true,
     "did": 3
   },
@@ -637,13 +623,6 @@
     "did": 3
   },
   {
-    "id": 5654,
-    "name": "IAI_2(SoSe)",
-    "longName": "2. Semester Master Industrial Artificial Intelligence (= summer semester)",
-    "active": true,
-    "did": 3
-  },
-  {
     "id": 5657,
     "name": "DEN-1",
     "longName": "1. Semester Bachelor Digital Engineering",
@@ -651,63 +630,24 @@
     "did": 3
   },
   {
-    "id": 5660,
-    "name": "DEN-2",
-    "longName": "2. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5663,
-    "name": "DEN-3",
-    "longName": "3. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5666,
-    "name": "DEN-4",
-    "longName": "4. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5669,
-    "name": "DEN-5",
-    "longName": "5. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5672,
-    "name": "DEN-6",
-    "longName": "6. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
-    "id": 5675,
-    "name": "DEN-7",
-    "longName": "7. Semester Bachelor Digital Engineering",
-    "active": true,
-    "did": 3
-  },
-  {
     "id": 5678,
     "name": "Incom-WIW",
     "longName": "Incomings WIW",
-    "active": true
+    "active": true,
+    "did": 3
   },
   {
     "id": 5681,
     "name": "SAC-WIW",
     "longName": "Study Abroad Certificate WIW",
-    "active": true
+    "active": true,
+    "did": 3
   },
   {
     "id": 5684,
-    "name": "Incom",
-    "longName": "Incoming",
-    "active": true
+    "name": "Incom INF",
+    "longName": "Incoming INF",
+    "active": true,
+    "did": 1
   }
 ]
